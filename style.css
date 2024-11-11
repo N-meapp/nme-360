@@ -1,0 +1,103 @@
+.elastic-spin {
+    animation: elastic-spin 2s infinite ease;
+  }
+  @keyframes elastic-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+
+  .main{
+    color: blue;
+    position-area:center;
+  }
+
+
+  .logo-text{
+    position: absolute;
+    position-area: center;
+    z-index: 1;
+    width: 220px;
+    margin-top: 54px;
+    margin-left: 32px;
+  }
+
+  
+.fade-in-left {
+  animation: fade-in-left 2s ease infinite;
+}
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+.spin {
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+.navExpand{
+  transition: all 1s;
+}
+
+
+.nav-tabs{
+  background-image: linear-gradient(to right,black, rgb(31, 31, 31) , black);
+
+}
+
+.nav-tabs >h1{
+  text-align: center;
+  height: 100%;
+  align-content: center;
+  font-size: larger;
+  color: #ffffff99;
+  font-family: nav-font;
+}
+
+.nav-tabs:hover{
+  border-bottom: solid;
+  border-top: solid;
+  border-color: #2b2b2b;
+  border-top-width: thin;
+  border-bottom-width: thin;
+}
+
+ .nav-tabs:hover >h1{
+ color: white;
+}
+
+
+@font-face {
+  font-family: 'nav-font';
+  src: url('./assets/fonts/rimouski\ sb.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+#colapse1,#colapse2,#colapse3{
+  transition: all 1s;
+}
+
+
+.bghead{
+  background: url(./assets/images/bg-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
