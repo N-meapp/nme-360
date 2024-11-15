@@ -9,9 +9,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
       rel="stylesheet"
     />
+    <link href="./main.scss" rel="stylesheet" />
     <link href="./style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-black">
     <!-- <embed
       src="./assets/audios/track.mp3"
       loop="true"
@@ -21,24 +22,24 @@
     /> -->
 
     <!-- navbar -->
-    <div class="fixed top-0 w-full z-20 flex justify-between px-20 fixed">
+    <div id="nav-bar" class="fixed top-0 w-full z-20 flex justify-between px-8 md:px-20">
       <div>
-        <img class="w-28" src="./assets/images/N-ME 360 LOGO WHITE PNG.png" />
+        <img class="w-20 md:w-28" src="./assets/images/N-ME 360 LOGO WHITE PNG.png" />
       </div>
 
-      <div onclick="handleNavbar()" class="content-center cursor-pointer">
-        <div id="colapse1" class="h-1 rounded w-10 bg-white mb-2"></div>
-        <div id="colapse2" class="h-1 rounded w-10 bg-white mb-2"></div>
-        <div id="colapse3" class="h-1 rounded w-10 bg-white mb-2"></div> 
+      <div onclick="handleNavbar()" class="content-center cursor-pointer ">
+        <div id="colapse1" class="h-[2px] rounded w-8 bg-white mb-2"></div>
+        <div id="colapse2" class="h-[2px] rounded w-8 bg-white mb-2"></div>
+        <div id="colapse3" class="h-[2px] rounded w-10 bg-white mb-2"></div>
       </div>
     </div>
 
     <div
       id="nav-expand"
-      class="w-full h-0 bg-black absolute z-10 navExpand h-[700px] mt-[-815px]"
+      class="w-full h-0 bg-black fixed z-10 navExpand h-[100vh] mt-[-1080px]"
     >
       <div id="nav-main-tab" class="h-0 w-full flex navExpand mt-40 px-20">
-        <div class="w-1/2 text-white mb"> 
+        <div class="w-1/2 text-white mb">
           <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
             <h1 class="font-bold">Home</h1>
           </div>
@@ -59,22 +60,131 @@
 
     <!-- navbar closing -->
 
-   
+    <!-- homepage -->
 
-    <div class="w-full h-[800px] bg-[black]">
+    <div class="each-section w-full bg-[black]">
       <div class="content-center text-center w-full h-full bghead">
-        <h1 class="text-white text-5xl">Choose Your </h1>
-        <h1 class="text-white text-7xl">Dream</h1>
+        <!-- <h1 class="text-white text-5xl">Choose Your</h1>
+        <h1 onclick="handleElement()" class="text-white text-7xl">Dream</h1> -->
+
+
+        <div class="positivity">
+          <span class="positivity__alone md:text-[2rem] text-[1rem]">Choose your</span>     
+          <div class="positivity__words">
+            <span class="change text-[2rem] md:text-[4rem]"><span class="text-[#8dddf1]">d</span>ream</span>
+            <span class="change text-[2rem] md:text-[4rem]"><span class="text-[#c3e47b]">s</span>uccess</span>
+            <span class="change text-[2rem] md:text-[4rem]"><span class="text-[#ebe294]">p</span>assion</span>
+            <span class="change text-[2rem] md:text-[4rem]"><span class="text-[#eeac51]">f</span>uture</span>
+            <span class="change text-[2rem] md:text-[4rem]"><span class="text-[#e7606f]">p</span>urpose</span>
+
+          </div>
+        </div>
+
+
+        <div>
+          <div
+            id="element1"
+            class="pipe-elements h-5 w-0 bg-white rounded-full"
+          ></div>
+          <div
+            id="element2"
+            class="pipe-elements h-0 w-5 bg-white ml-20 rounded-full"
+          ></div>
+          <div
+            id="element3"
+            class="pipe-elements h-5 w-0 bg-white ml-24 rounded-full"
+          ></div>
+          <div
+            id="element4"
+            class="pipe-elements h-0 w-5 bg-white ml-44 rounded-full"
+          ></div>
+        </div>
       </div>
     </div>
 
-  </body>
-  
+    <!-- homepege closing -->
 
+    <!-- about page  -->
+    <section class="each-section">
+  
+      <div class="about pt-20">
+      	<section class="flex  mb-20 md:mb-48">
+
+          <div class="w-full mx-auto">
+            <div class='main'>
+              <h2 class="first letter  text-[40px] md:text-[70px] lg:text-[150px]">WHO WE ARE</h2>
+              <h2 class="second letter text-[40px] md:text-[70px] lg:text-[150px]">WHO WE ARE</h2>
+            </div>
+          <!-- </div>
+          <div class="flex w-full justify-center">
+          <h1 class="swift-up-text letters mr-1"></h1>
+          <h1 class="swift-up-text letters mr-1"></h1>
+          <h1 class="swift-up-text letters mr-10"></h1>
+          <h1 class="swift-up-text-we letters mr-1"></h1>
+          <h1 class="swift-up-text-we letters mr-10"></h1>
+          <h1 class="swift-up-text letters mr-1"></h1>
+          <h1 class="swift-up-text letters mr-1"></h1>
+          <h1 class="swift-up-text letters mr-1"></h1>
+        </div> -->
+
+
+        </section>
+       
+       
+        <div id="title-1" class="ab-1 text-[13px] md:text-[20px] tracking-[8px] md:tracking-[15px]">
+          <p>
+            WE TRANSFORM BRANDS<br />
+            CREATING IMMERSIVE EXPERIENCES<br />
+            THROUGH OUR EXCLUSIVE APPROACH TO<br />
+            BRANDING & WEB DESIGN
+          </p>
+        </div>
+      </div>
+
+      <!-- slider -->
+
+      <div class="scroll-container">
+        <div
+        id="sample"
+        class="slider-about h-[inherit] w-full bg-black mb-48 mt-10 scrollable-div"
+      >
+        <!-- <div class="slider-1 h-96 w-3/4 mx-auto bg-[yellow]">
+
+        </div> -->
+        <div
+          id="slider"
+          class="each-section slider-2 h-full w-[70%] mx-auto bg-[aqua] rounded-xl mb-20 absolut"  
+        ></div>
+        <div
+          id="slider"
+          class="each-section slider-2 h-full w-[70%] mx-auto bg-[green] rounded-xl mb-20 absolut"
+        ></div>
+        <div
+          id="slider"
+          class="each-section slider-2 h-full w-[70%] mx-auto bg-[red] rounded-xl mb-20 absolut"
+        ></div>
+      </div>
+      </div>
+      
+
+      <div class="h-96 w-full"></div>
+    </section>
+
+
+    <section class="each-section">
+
+      <div class="h-24 w-3/4 bg-white rounded-xl">
+
+      </div>
+
+    </section>
+
+
+  </body>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="jquery-3.7.1.min.js"></script>
