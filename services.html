@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nme-360</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./main.scss" rel="stylesheet" />
+    <link href="./assets/css/service.css" rel="stylesheet" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  </head>
+  <body class="bg-black">
+    <!-- <embed
+      src="./assets/audios/track.mp3"
+      loop="true"
+      autostart="true"
+      width="2"
+      height="0"
+    /> -->
+    <!-- navbar -->
+    <div id="nav-bar" class="fixed top-0 w-full z-20 flex justify-between px-8 md:px-20">
+     <div>
+        <img class="w-20 md:w-28" src="./assets/images/N-ME 360 LOGO WHITE PNG.png" />
+      </div>
+
+       <div id="handburger" onclick="handleNavbar()" class="content-center cursor-pointer ">
+        <div id="colapse1" class="h-[2px] rounded w-8 bg-white mb-2"></div>
+        <div id="colapse2" class="h-[2px] rounded w-8 bg-white mb-2"></div>
+        <div id="colapse3" class="h-[2px] rounded w-10 bg-white mb-2"></div>
+      </div>
+    </div>
+
+    <div id="nav-expand" class="w-full h-0 bg-black fixed z-10 navExpand h-[100vh] mt-[-1080px]">
+      <div id="nav-main-tab" class="h-0 w-full flex navExpand mt-40 px-20">
+        <div class="w-1/2 text-white mb">
+          <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+            <h1 class="font-bold">Home</h1>
+          </div>
+          <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+            <h1 class="font-bold">About</h1>
+          </div>
+          <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+            <h1 class="font-bold">Services</h1>
+          </div>
+          <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+            <h1 class="font-bold">Contact us</h1>
+          </div>
+        </div>
+
+        <div class="w-1/2 text-white"></div>
+      </div>
+    </div> 
+    <section class="each-section">
+      <div id="scrollbar-id" class="more-about pt-20  scrollable">
+        <div class="services-section ">
+            <div class="service-head">
+                <h1>services</h1>
+            </div>
+            <div class="services-description">
+              <div class="services-cards">
+                <div class="services-card-content">
+                  <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
+                </div>
+                <div class="services-card-content-para">
+                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
+                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
+                          <div id="third" class="relative scale-y-0 opacity-0">
+                            <div class="service-modal-head">
+                              <h1>
+                                web devoloper
+                              </h1>
+                            </div>
+                            <div class="service-modal-para">
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>                                        
+                          </div>
+                        </div>
+                        <div class="back-btn">
+                          <button onclick="closeAuthModal()"> back</button>
+                           <!-- <button onclick="closeButton()">podaaa</button> -->
+                        </div>
+                    
+                        <div class="service-modal-img">
+                          <img src="assets/images/download (1).jpg" alt="">
+                        </div> 
+                      
+                    </div>
+                    <div class="services-modal-btn">
+                      <h1><button onclick="openAuthModal()">web devoloperrr</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
+                    </div>
+                </div>
+              </div>
+              <div class="services-cards">
+                <div class="services-card-content">
+                  <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
+                </div>
+                <div class="services-card-content-para">
+                  <div class=" ">
+                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
+                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
+                          <div id="third" class="relative scale-y-0 opacity-0">
+                            <div class="service-modal-head">
+                              <h1>
+                                web devoloping
+                              </h1>
+                            </div>
+                            <div class="service-modal-para">
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>                                        
+                          </div>
+                        </div>
+                        <div class="back-btn">
+                          <button onclick="closeAuthModal()">back</button>
+                        </div>
+                    
+                        <div class="service-modal-img">
+                          <img src="assets/images/FOTOS PRA VOCÊS_PICTURES FOR YOU - SOMBRAS_SHADOW (1).png" alt="">
+                        </div> 
+                    </div>
+                    <div class="services-card-content-para">
+                      <h1><button onclick="openAuthModal()">digital marketing</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
+                    </div>
+
+                  </div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="services-description">
+              <div class="services-cards ">
+                <div class="services-card-content ">
+                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
+                </div>
+                <div class="services-card-content-para">
+                  <div class="">
+                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
+                      
+                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
+                          <div id="third" class="relative scale-y-0 opacity-0">
+                            <div class="service-modal-head">
+                              <h1>
+                                web devoloping
+                              </h1>
+                            </div>
+                            <div class="service-modal-para">
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>                                        
+                          </div>
+                        </div>
+                        <div class="back-btn">
+                          <button onclick="closeAuthModal()">back</button>
+                        </div>
+                    
+                        <div class="service-modal-img">
+                          <img src="assets/images/digital marketing.jpg" alt="">
+                        </div> 
+                      
+                    </div>
+                    <div class="services-card-content-para">
+                      <h1><button onclick="openAuthModal()">branding</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
+                    </div>
+        
+                  </div> 
+                </div>
+              </div>
+              <div class="services-cards">
+                <div class="services-card-content">
+                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="" >
+                </div>
+                <div class="services-card-content-para">
+                  <div class=" ">
+                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
+                      
+                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
+                          <div id="third" class="relative scale-y-0 opacity-0">
+                            <div class="service-modal-head">
+                              <h1>
+                                web devoloping
+                              </h1>
+                            </div>
+                            <div class="service-modal-para">
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>                                        
+                          </div>
+                        </div>
+                        <div class="back-btn">
+                          <button onclick="closeAuthModal()">back</button>
+                        </div>
+                    
+                        <div class="service-modal-img">
+                          <img src="assets/images/Mobile App Development.jpg" alt="">
+                        </div> 
+                      
+                    </div>
+                    <div class="services-card-content-para">
+                      <h1><button onclick="openAuthModal()">app development</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
+                    </div>
+        
+                  </div> 
+                </div>
+              </div>
+            </div>
+        
+            <div class="services-description">
+              <div class="services-cards">
+                <div class="services-card-content">
+                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
+                </div>
+                <div class="services-card-content-para">
+                  <div class="">
+                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
+                      
+                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
+                          <div id="third" class="relative scale-y-0 opacity-0">
+                            <div class="service-modal-head">
+                              <h1>
+                                web devoloping
+                              </h1>
+                            </div>
+                            <div class="service-modal-para">
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>                                        
+                          </div>
+                        </div>
+                        <div class="back-btn">
+                          <button onclick="closeAuthModal()">back</button>
+                        </div>
+                    
+                        <div class="service-modal-img">
+                          <img src="assets/images/download (1).jpg" alt="" >
+                        </div> 
+                      
+                    </div>
+                    <div class="services-card-content-para">
+                      <h1><button onclick="openAuthModal()">software & hardware</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
+                    </div>
+        
+                  </div> 
+                </div>
+              </div>
+              <div class="services-cards">
+                <div class="services-card-content">
+                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="" >
+                </div>
+                <div class="services-card-content-para">
+                  <div class="">
+                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
+                      
+                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
+                          <div id="third" class="relative scale-y-0 opacity-0">
+                            <div class="service-modal-head">
+                              <h1>
+                                web devoloping
+                              </h1>
+                            </div>
+                            <div class="service-modal-para">
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>                                        
+                          </div>
+                        </div>
+                        <div class="back-btn">
+                          <button onclick="closeAuthModal()">back</button>
+                        </div>
+                        <div class="service-modal-img">
+                          <img src="assets/images/pointer-pin-location-earth-global-world-with-cardboard-boxes-transportation-logistics-concept-pink-background-icon-symbol-3d-rendering.jpg" alt="">
+                        </div> 
+                      
+                    </div>
+                    <div class="services-card-content-para">
+                      <h1><button onclick="openAuthModal()">seo</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
+                    </div>
+        
+                  </div> 
+                </div>
+              </div>
+            </div>
+        
+            <div class="services-description">
+              <div class="services-cards">
+                <div class="services-card-content">
+                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
+                </div>
+                <div class="services-card-content-para">
+                  <div class="">
+                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
+                      
+                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
+                          <div id="third" class="relative scale-y-0 opacity-0">
+                            <div class="service-modal-head">
+                              <h1>
+                                web devoloping
+                              </h1>
+                            </div>
+                            <div class="service-modal-para">
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>                                        
+                          </div>
+                        </div>
+                        <div class="back-btn">
+                          <button onclick="closeAuthModal()">back</button>
+                        </div>
+                    
+                        <div class="service-modal-img">
+                          <img src="assets/images/branding.jpg" alt=""></button>
+                        </div> 
+                      
+                    </div>
+                    <div class="services-card-content-para">
+                      <h1><button onclick="openAuthModal()">ui/ux design</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
+                    </div>
+        
+                  </div> 
+                </div>
+              </div>
+              <div class="services-cards">
+                <div class="services-card-content">
+                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
+                </div>
+                <div class="services-card-content-para">
+                  <div class="">
+                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
+                      
+                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
+                          <div id="third" class="relative scale-y-0 opacity-0">
+                            <div class="service-modal-head">
+                              <h1>
+                                web devoloping
+                              </h1>
+                            </div>
+                            <div class="service-modal-para">
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>                                        
+                          </div>
+                        </div>
+                        <div class="back-btn">
+                          <button onclick="closeAuthModal()">back</button>
+                        </div>
+                    
+                        <div class="service-modal-img">
+                          <img src="assets/images/digital marketing.jpg" alt="">
+                        </div> 
+                      
+                    </div>
+                    <div class="services-card-content-para">
+                      <h1><button onclick="openAuthModal()">web devoloping</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
+                    </div>
+        
+                  </div> 
+                </div>
+              </div>
+            </div>
+
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="each-section">
+    </section> -->
+
+
+
+    <section class="each-section pt-40 scrollable">
+      <div class="services-why lg:flex ">
+        <div class="services-why-description">
+          <h1>why we or what makes us unique</h1>
+          <p>
+            A well-designed website generally will receive many visitors, and SEO helps your website to get more users. Our development team always keeps all standards of SEO while 
+            developing a website. It helps your website to list soon on search engines under your targeting keywords. We usually perform a SEO audit check up after the development 
+            process which help us to make your website a completely SEO friendly one. Our development team ensure that your website is easily render on various resolutions, screen 
+            sizes, and browsers; and with the increasing popularity of mobile devices, websites should function properly on the plethora of these types of devices. We also provide 
+            custom web development as per your requirement. Our team has experience in extensively on numerous high quality products and has a proven record of successful projects.
+             Our highly skilled team should working on the project, dedicating all the necessary energy to meet all quality requirements, and provide trainings to the staff regarding 
+             cutting-edge technologies.
+          </p>
+        </div>
+        <div class="services-why-image">
+          <img src="assets/images/FOTOS PRA VOCÊS_PICTURES FOR YOU - SOMBRAS_SHADOW.jpg" alt="">
+        </div>
+      </div>
+
+
+
+
+
+      <div class="footer">
+        <div class="container-fluid">
+          <div class="footer-sub grid grid-rows-1 grid-flow-col ">
+            <div class="footer-address">
+              <p>Hilite Business Park<br>
+                Near Hilite Mall,Poovangal,Kozhikode<br>
+                Kochi, Thiruvananthapuram, Pondichery<br>
+                Coimbatore,Chennai, Bengaluru<br>
+                Dubai, Qatar, Oman<br>
+              </p>
+            </div>
+
+            <div class="footer-sociallinks">
+              <p class="facebook"><a href="">facebook <i class="fa fa-arrow-right arrow1" aria-hidden="true"></i></a></p>
+                <p class="instagram"><a href="">instagram <i class="fa fa-arrow-right arrow2" aria-hidden="true"></i></a></p>
+                <p class="linkedin"><a href="">linkedin <i class="fa fa-arrow-right arrow3" aria-hidden="true"></i></a> </i></p>
+              </p>
+              <div class="footer-email">
+                <h4>enquiries</h4>
+                <p>nmesmartech@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="footer-newsletter">
+              <div class="newsletter">
+                <h1>subscribe to  <br>
+                our news letter</h1>
+              </div>
+              <div class="newsletter-input">
+                <input type="text" placeholder="your email">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="copyright grid grid-rows-1 grid-flow-col">
+            <div class="copy">
+              <p><i class="fa fa-copyright" aria-hidden="true"></i>  2024 nme-360</p>
+            </div>
+            <div class="powerdby">
+              <p>powerd by nme-360 team</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  
+    <script src="./assets/js/app.js"></script>`
+
+
+    <script src="./assets/js/service.js"></script>
+</body>
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="jquery-3.7.1.min.js"></script>
+
+<script src="./three.js"></script>
+</html>
+
+
