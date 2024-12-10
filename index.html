@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/threejs-components@0.0.5/build/backgrounds/spheres1.cdn.min.js"></script> -->
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
       rel="stylesheet"
     />
     <link href="./main.scss" rel="stylesheet" />
-    <link href="./style.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/header.css" rel="stylesheet" />
+    <!-- <link href="./sample.css" rel="stylesheet" /> -->
   </head>
   <body class="bg-black">
-    <!-- <embed
-      src="./assets/audios/track.mp3"
-      loop="true"
-      autostart="true"
-      width="2"
-      height="0"
-    /> -->
-
     <!-- navbar -->
-    <div id="nav-bar" class="fixed top-0 w-full z-20 flex justify-between px-8 md:px-20">
+    <div
+      id="nav-bar"
+      class="fixed top-0 w-full z-20 flex justify-between px-8 md:px-20"
+    >
       <div>
-        <img class="w-20 md:w-28" src="./assets/images/N-ME 360 LOGO WHITE PNG.png" />
+        <img
+          class="w-20 md:w-28"
+          src="./assets/images/N-ME 360 LOGO WHITE PNG.png"
+        />
       </div>
 
-      <div onclick="handleNavbar()" class="content-center cursor-pointer ">
+      <div onclick="handleNavbar()" class="content-center cursor-pointer">
         <div id="colapse1" class="h-[2px] rounded w-8 bg-white mb-2"></div>
         <div id="colapse2" class="h-[2px] rounded w-8 bg-white mb-2"></div>
         <div id="colapse3" class="h-[2px] rounded w-10 bg-white mb-2"></div>
@@ -62,42 +74,31 @@
 
     <!-- homepage -->
 
+    <div class="w-full h-[100vh]"></div>
+
     <div class="each-section w-full bg-[black]">
       <div class="content-center text-center w-full h-full bghead">
-        <!-- <h1 class="text-white text-5xl">Choose Your</h1>
-        <h1 onclick="handleElement()" class="text-white text-7xl">Dream</h1> -->
-
-
         <div class="positivity">
-          <span class="positivity__alone md:text-[2rem] text-[1rem]">Choose your</span>     
+          <span class="positivity__alone md:text-[2rem] text-[1rem]"
+            >Choose your</span
+          >
           <div class="positivity__words">
-            <span class="change text-[2rem] md:text-[4rem]"><span class="text-[#8dddf1]">d</span>ream</span>
-            <span class="change text-[2rem] md:text-[4rem]"><span class="text-[#c3e47b]">s</span>uccess</span>
-            <span class="change text-[2rem] md:text-[4rem]"><span class="text-[#ebe294]">p</span>assion</span>
-            <span class="change text-[2rem] md:text-[4rem]"><span class="text-[#eeac51]">f</span>uture</span>
-            <span class="change text-[2rem] md:text-[4rem]"><span class="text-[#e7606f]">p</span>urpose</span>
-
+            <span class="change text-[2rem] md:text-[4rem]"
+              ><span class="text-[#8dddf1]">d</span>ream</span
+            >
+            <span class="change text-[2rem] md:text-[4rem]"
+              ><span class="text-[#c3e47b]">s</span>uccess</span
+            >
+            <span class="change text-[2rem] md:text-[4rem]"
+              ><span class="text-[#ebe294]">p</span>assion</span
+            >
+            <span class="change text-[2rem] md:text-[4rem]"
+              ><span class="text-[#eeac51]">f</span>uture</span
+            >
+            <span class="change text-[2rem] md:text-[4rem]"
+              ><span class="text-[#e7606f]">p</span>urpose</span
+            >
           </div>
-        </div>
-
-
-        <div>
-          <div
-            id="element1"
-            class="pipe-elements h-5 w-0 bg-white rounded-full"
-          ></div>
-          <div
-            id="element2"
-            class="pipe-elements h-0 w-5 bg-white ml-20 rounded-full"
-          ></div>
-          <div
-            id="element3"
-            class="pipe-elements h-5 w-0 bg-white ml-24 rounded-full"
-          ></div>
-          <div
-            id="element4"
-            class="pipe-elements h-0 w-5 bg-white ml-44 rounded-full"
-          ></div>
         </div>
       </div>
     </div>
@@ -106,32 +107,28 @@
 
     <!-- about page  -->
     <section class="each-section">
-  
       <div class="about pt-20">
-      	<section class="flex  mb-20 md:mb-48">
-
+        <section class="flex mb-20 md:mb-48">
           <div class="w-full mx-auto">
-            <div class='main'>
-              <h2 class="first letter  text-[40px] md:text-[70px] lg:text-[150px]">WHO WE ARE</h2>
-              <h2 class="second letter text-[40px] md:text-[70px] lg:text-[150px]">WHO WE ARE</h2>
+            <div class="main">
+              <h2
+                class="first letter text-[40px] md:text-[70px] lg:text-[150px]"
+              >
+                WHO WE ARE
+              </h2>
+              <h2
+                class="second letter text-[40px] md:text-[70px] lg:text-[150px]"
+              >
+                WHO WE ARE
+              </h2>
             </div>
-          <!-- </div>
-          <div class="flex w-full justify-center">
-          <h1 class="swift-up-text letters mr-1"></h1>
-          <h1 class="swift-up-text letters mr-1"></h1>
-          <h1 class="swift-up-text letters mr-10"></h1>
-          <h1 class="swift-up-text-we letters mr-1"></h1>
-          <h1 class="swift-up-text-we letters mr-10"></h1>
-          <h1 class="swift-up-text letters mr-1"></h1>
-          <h1 class="swift-up-text letters mr-1"></h1>
-          <h1 class="swift-up-text letters mr-1"></h1>
-        </div> -->
-
-
+          </div>
         </section>
-       
-       
-        <div id="title-1" class="ab-1 text-[13px] md:text-[20px] tracking-[8px] md:tracking-[15px]">
+
+        <div
+          id="title-1"
+          class="ab-1 text-[13px] md:text-[20px] tracking-[8px] md:tracking-[15px]"
+        >
           <p>
             WE TRANSFORM BRANDS<br />
             CREATING IMMERSIVE EXPERIENCES<br />
@@ -139,47 +136,453 @@
             BRANDING & WEB DESIGN
           </p>
         </div>
+
+        <div class="ab-btn">
+          <a href="/about" class="btn-primary px-20 py-12 rounded-full">
+            Learn More About Us
+          </a>
+        </div>
       </div>
-
-      <!-- slider -->
-
-      <div class="scroll-container">
-        <div
-        id="sample"
-        class="slider-about h-[inherit] w-full bg-black mb-48 mt-10 scrollable-div"
-      >
-        <!-- <div class="slider-1 h-96 w-3/4 mx-auto bg-[yellow]">
-
-        </div> -->
-        <div
-          id="slider"
-          class="each-section slider-2 h-full w-[70%] mx-auto bg-[aqua] rounded-xl mb-20 absolut"  
-        ></div>
-        <div
-          id="slider"
-          class="each-section slider-2 h-full w-[70%] mx-auto bg-[green] rounded-xl mb-20 absolut"
-        ></div>
-        <div
-          id="slider"
-          class="each-section slider-2 h-full w-[70%] mx-auto bg-[red] rounded-xl mb-20 absolut"
-        ></div>
-      </div>
-      </div>
-      
-
-      <div class="h-96 w-full"></div>
     </section>
 
+    <!-- testimonial section -->
 
     <section class="each-section">
-
-      <div class="h-24 w-3/4 bg-white rounded-xl">
-
+      <div class="testimonial-head">
+        <h1 class="text-white text-7xl text-center">Our Trusted Clients</h1>
+        
       </div>
+      <div class="our-clients">
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img
+                src="./assets/images/hc1.jpg"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/images/hc2.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- <section class="each-section">
+      <div id="scrollbar-id" class="why-us scrollable">
+        <div class="whyus-sec">
+          <h1 class="why-us">WHY US?</h1>
+          <h3 class="why-us-sub">Expertise and Innovation</h3>
+          <p class="why-us-para">
+            Our experienced team of professionals brings extensive knowledge and
+            experience in IT solutions, ensuring we stay ahead of industry
+            trends and deliver innovative services designed to your needs
+          </p>
+        </div>
+
+        <div class="whyus-sec">
+          <h3 class="why-us-sub">Proven Track Record</h3>
+          <p class="why-us-para">
+            With over 1,500+ active clients and more than 1,800+ successful
+            projects, our reputation speaks for itself. We have a history of
+            delivering results that drive growth and success for businesses of
+            all sizes.
+          </p>
+        </div>
+
+        <div class="whyus-sec">
+          <h3 class="why-us-sub">Comprehensive Solutions</h3>
+          <p class="why-us-para">
+            From designing and branding to web designing and digital marketing,
+            we provide a comprehensive range of services that cover all aspects
+            of your digital presence.
+          </p>
+        </div>
+
+        <div class="whyus-sec">
+          <h3 class="why-us-sub">Commitment to Quality</h3>
+          <p class="why-us-para">
+            We believe in delivering high-quality solutions that are not only
+            effective but also reliable. Our rigorous quality assurance
+            processes ensure that every project meets the highest standards.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="each-section">
+      <div class="service-box bg-[red]" >
+        <div class="card-us sidebar">
+          <div class="service-1 content-wrapper" id="whyus-box">
+            <div class="title-1 gap-4" id="whyus-page-content">
+              <div class="heading-1">
+                <!-- <div class="w-6 h-6 bg-[red] rounded-full content"></div> -->
+                <h1 class="text-7xl mb-16 w-min heading-text text-[#8dddf1]">
+                  E
+                </h1>
+                <h1 class="text-5xl mb-16 w-min heading-text mt-3">
+                  xpertise and Innovation
+                </h1>
+              </div>
+              <p class="para-1">
+                Our experienced team of professionals brings extensive knowledge
+                and experience in IT solutions, ensuring we stay ahead of
+                industry trends and deliver innovative services designed to your
+                needs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ball-main" >
+          <div class="fall">
+            <div class="walls">
+              <div class="wall">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="ceil"></div>
+              </div>
+              <div class="wall">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="ceil"></div>
+              </div>
+              <div class="wall">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="ceil"></div>
+              </div>
+              <div class="wall">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="ceil"></div>
+              </div>
+              <div class="wall">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="ceil"></div>
+              </div>
+              <div class="wall">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="ceil"></div>
+              </div>
+              <div class="wall">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="ceil"></div>
+              </div>
+              <div class="wall">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="ceil"></div>
+              </div>
+              <div class="wall">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="ceil"></div>
+              </div>
+              <div class="wall">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="ceil"></div>
+              </div>
+            </div>
+            <div class="ballArm">
+              <div class="ball"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
+<!-- video section -->
+
+
+    <section class="each-section v-sec-outer">
+      <div>
+        <video autoplay muted  class="v-sec target">
+          <source
+            src="./assets/videos/WhatsApp Video 2024-12-10 at 01.16.09_efdf7018.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </section>
+
+    <section class="each-section">
+      <div class="h-[100vh] w-full relative" id="globe">
+
+        <!-- modal section -->
+        <div id="nme-appmodal" class="h-0 w-0 bg-white absolute z-10 nme-appmodal">
+
+
+        </div>
+        <!-- modal section closing -->
+
+        <h1 class="text-white text-7xl text-center mt-[105px]">Our Projects</h1>
+        <div class="our-projects flex">
+          <div class="first-project" style="border-radius: 2px 82px / 93px">
+            <div class="w-[35%] mb-12 mt-8 mx-auto">
+              <img
+                src="./assets/images/logo-nme.png"
+                class="nme-img mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="nme-quotes mb-12">
+              <p class="text-xl text-[white]">
+                Your gateway to effortless business promotion worldwide
+              </p>
+            </div>
+            <div class="project-btn h-[50px] w-[30%] mx-auto bg-[#051d39]">
+              <button class="prjct-btn">read more</button>
+            </div>
+          </div>
+
+          <div class="rotating-animation">
+            <div class="projects hidden" id="rotating-animation">
+              <div class="scene">
+                <div class="rings">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="second-project" style="border-radius: 2px 82px / 93px">
+            <div class="w-[50%] mb-12 mt-12 mx-auto">
+              <img
+                src="./assets/images/buysel.png"
+                class="buysel-img mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="nme-quotes mb-12">
+              <p class="text-xl text-[white]">
+                the ultimate destination for efficient real-estate management
+              </p>
+            </div>
+            <div class="project-btn h-[50px] w-[30%] mx-auto bg-[#00802e5e]">
+              <button class="prjct-btn" id="project-button">read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- future updation section -->
+    <section class="each-section">
+      <div class="future-sec">
+        <div class="updates">
+          <h1 class="text-[white] text-7xl text-center">Our Future Projects</h1>
+        </div>
+
+        <div class="updates-cards">
+          <div class="centered pt-20">
+            <div class="card border-left-behind">
+              <div class="shadow"></div>
+              <div class="image background">
+                <img src="./assets/images/designs_08.1.jpg" alt="" />
+              </div>
+              <div class="image cutout">
+                <img src="./assets/images/eiffel_tower-removebg.png" alt="" />
+              </div>
+              <div class="content">
+                <h2 class="text-white">Tourism</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="card border-right-behind border-bottom-behind">
+              <div class="shadow"></div>
+              <div class="image background">
+                <img src="./assets/images/designs_08.1.jpg" alt="" />
+              </div>
+              <div class="image cutout">
+                <img src="./assets/images/ticket.png" alt="" />
+              </div>
+              <div class="content">
+                <h2>Ticket booking</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="card border-left-behind">
+              <div class="shadow"></div>
+              <div class="image background">
+                <img src="./assets/images/designs_08.1.jpg" alt="" />
+              </div>
+              <div class="image cutout">
+                <img src="./assets/images/ridecar.png" alt="" class="flex" />
+              </div>
+              <div class="content">
+                <h2>Ride booking</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="each-section"></section>
+    <!-- future updation closing -->
+
+    <!-- modal-section -->
+
+    <!-- modal-closing -->
   </body>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -187,7 +590,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
   <script src="jquery-3.7.1.min.js"></script>
-  <script src="./app.js"></script>
+  <script src="./assets/js/app.js"></script>
   <script src="./three.js"></script>
 </html>
