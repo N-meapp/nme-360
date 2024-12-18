@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'headingfont';
+  src: url(../fonts/AbandoN.ttf);
+}
+
+p{
+  font-family: "Poppins", serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .elastic-spin {
     animation: elastic-spin 2s infinite ease;
   }
@@ -50,9 +68,9 @@
 
 
 
-.navExpand{
+/* .navExpand{
   transition: all 1s;
-}
+} */
 
 
 .nav-tabs{
@@ -66,7 +84,8 @@
   align-content: center;
   font-size: larger;
   color: #ffffff99;
-  font-family: nav-font;
+  /* font-family: nav-font; */
+  font-family:" poppins",sans-serif;
 }
 
 .nav-tabs:hover{
@@ -147,6 +166,7 @@
 
 .about{
   background-color: black;
+
   
 }
 .ab-1{
@@ -418,24 +438,21 @@ html{
   align-items: baseline;
   text-align: center;
   color: aliceblue;
-  background-image: url('../images/wavegrower.gif');
-  background-size: fill;
+  background: url(../images/Dizzying.gif);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-   
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charm:wght@400;700&family=Italiana&family=Quando&display=swap');
+
 .about-head{
-  font-size: 25rem;
-	font-family: "Bebas Neue", sans-serif;
-	font-weight: 400;
-	font-style: normal;
+  font-size: 20rem;
 	letter-spacing: 2px;
   margin-top: auto;
   right: 0;
   position: absolute;
   left: 0;
   bottom: 0;
+  font-weight: 800;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charm:wght@400;700&family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quando&display=swap');
@@ -444,14 +461,14 @@ html{
   color: aliceblue;
   text-transform :uppercase;
   text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
   letter-spacing: 0.-11px;
-  
+  margin-top: 5rem;
 }
 
 .first-letter {
+  font-weight: 800;
   display: inline-block;
   position: relative; /* Enables position-based animations */
   opacity: 1; /* Start fully visible */
@@ -460,14 +477,13 @@ html{
   color: aliceblue;
   text-transform :uppercase;
   text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   letter-spacing: 0.-11px;
 }
 
-
 .text-container {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 2.5rem;
   font-weight: bold; 
   color: #e9e9e9af;
@@ -515,10 +531,24 @@ html{
 .domore .container{
   display: flex;
   margin: auto;
+  align-items: center;
+  margin-top: 4rem;
+  /* margin-bottom: auto; */
   border-top: #818181 1px solid;
   border-bottom: #818181 1px solid;
 
 }
+
+#domoreid{
+
+  /* background-image: url('../images/130+\ CSS\ Loaders.gif'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+
+}
+
 
 .domore-content{
   display: flex;
@@ -532,18 +562,16 @@ html{
 }
 
 .domore-head h1{
-  color: aliceblue;
-  font-size: 6.5rem;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  color: rgba(234, 239, 243, 0.87);
+  font-size: 30px;
+  font-weight: 800;
   /* letter-spacing: 2px; */
-  line-height: 100px;
+  /* line-height: 100px; */
 }
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charm:wght@400;700&family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quando&display=swap');
 .domore-head p{
   color: rgba(240, 248, 255, 0.788);
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
@@ -553,7 +581,12 @@ html{
 .domore-img video{
   width: 52vw;
   /* height: 59vh; */
-  padding-left: 10rem;
+  padding-left: 10rem; 
+
+}
+
+.domore-img1 video{
+  display: none;
 }
 
 /* domore section design end*/
@@ -654,7 +687,7 @@ html{
   color: aliceblue;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   /* text-align: center; */
 }
@@ -740,22 +773,78 @@ html {
 .feature-head{
   text-align: center;
   /* margin-top: 50px; */
-  margin-bottom: 90px;
 }
 
 .feature-head{
   color: aliceblue;
   font-size: 70px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
   font-style: normal;
 }
 
 .sec-letter{
   color: #4fc9ed;
   font-size: 70px;
+  font-weight: 800;
 
 }
+
+.feature-4s{
+  width: 100%;
+  align-content:center;
+  margin-top: 1rem;
+  /* margin-bottom: 90px; */
+  text-align: center;
+
+}
+
+.feature-4s p{
+  color: #bcc5c5;
+  font-size: 20px;
+  /* padding: 0px 20rem; */
+}
+
+.four-span{
+  font-size: 50px;
+  /* color: #4fc8edb9; */
+  font-weight: bolder;
+  font-family:"headingfont";
+}
+
+.four-span1{
+  font-size: 35px;
+  color: #afd766;
+  font-weight: 800;
+  /* font-family:"headingfont"; */
+}
+
+.four-s{
+  font-family: "headingfont" !important;
+  font-size: 50px;
+  color: #afd766;
+}
+
+.feature-container .card:hover .contentBx h2 span{
+  color: #4fc9ed;
+
+}
+
+/* contact page style */
+
+
+.contact .footer{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 5rem;
+}
+
+
+
+
+
+/* contact page style end*/
+
 
 /* footer */
 
@@ -763,6 +852,7 @@ html {
   width: 100%;
   height: 100vh;
   background: white;
+  /* box-shadow: rgba(20, 20, 20, 0.925) 0px 100px 60px -12px inset, rgba(3, 3, 3, 0.753) 0px 18px 36px -18px inset; */
 }
 
 .footer .footer-sub {
@@ -775,7 +865,7 @@ html {
   text-align: justify;
   margin-left: 90px;
   /* background: #2b2b2b; */
-  margin-top: 23rem;
+  margin-top: 15rem;
 
 }
 
@@ -783,8 +873,9 @@ html {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 27px;
+  /* font-size: 27px; */
   text-transform: capitalize;
+  text-align: left;
 }
 
 .footer-sociallinks{
@@ -792,7 +883,7 @@ html {
   text-align: justify;
   margin-left: 90px;
   /* background: #2b2b2b; */
-  margin-top: 23rem;
+  margin-top: 15rem;
 }
 
 .footer-sociallinks p{
@@ -843,6 +934,7 @@ html {
   font-size: 30px;
   text-transform: capitalize;
   margin-top: 90px;
+  font-weight: 800;
 }
 
 /* footer section */
@@ -852,12 +944,12 @@ html {
   /* margin-left: 90px; */
   margin-bottom: auto;
   /* background: #2b2b2b; */
-  margin-top: 28rem;
+  margin-top: 17rem;
   margin-right: 7rem;
 }
 
 .newsletter h1{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 800;
   font-style: normal;
   font-size: 50px;
@@ -955,7 +1047,7 @@ html {
 	box-sizing: border-box;
 }
 .creative-cards{
-    padding: 120px 0;
+    padding: 98px 0;
     position: relative;
 }
 
@@ -979,6 +1071,7 @@ html {
     max-width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    margin-top: 0;
 }
 .card-details,.card-details1,.card-details2 {
     width: 100%;
@@ -1259,29 +1352,32 @@ html {
 
 /* services page starts */
 
-
+@font-face{
+  font-family: 'servicehead';
+  src: url('../fonts/3\ Abraham\ Outline\ Demo.otf');
+  font-weight: 400;
+}
 
 .services-head{
-  font-size: 25rem;
-	font-family: "Bebas Neue", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: 2px;
+  font-size: 22rem;
+	letter-spacing: 12px;
   margin-top: auto;
   right: 0;
   position: absolute;
   left: 0;
   bottom: 0;
-  color: #bcc5c5;
+  color: #e0f3f3;
+  font-weight: 800;
+  letter-spacing: 5px;
 }
 
 .top-head-services{
   height: 100vh;
   text-align: center;
-  background-image: url('../images/Dizzying\ Gifs\ by\ Etienne\ Jacob\ Infuse\ Mathematical\ Equations\ into\ Endless\ Loops\ —\ Colossal.gif');
+  background-image: url('../images/For\ Your\ Processing1.gif');
   background-size: fill;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 
 }
 
@@ -1415,9 +1511,10 @@ html {
 /* modal of service page starts*/
 
 #authOverlay{
-  background-color: #ebbebe  !important;
+  background-color: #050505e8  !important;
   display: flex;
-  margin: auto;
+  align-content: center;
+  z-index: 1000;
 }
 
 /* #fourth{
@@ -1451,7 +1548,14 @@ html {
 }
 .service-modal-img img{
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: 40px;
+  background: #00000091;
+  height: 500px;
+  width: 100%;
+}
+
+.service-modal-img1{
+  display: none;
 }
 /* .service-modal-head{
   font-size:25px;
@@ -1459,16 +1563,17 @@ html {
 
 .service-modal-para p{
   font-size: 17px;
-  color: #000 !important;
+  color: #f5f3f3 !important;
   margin-top: 40px;
   font-family: "Poppins", sans-serif;
 }
 
 .service-modal-head h1{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-size: 67px;
-  font-weight: 400;
-  color: #030303d2 !important;
+  font-weight: 800;
+  color: #fff !important ;
+  text-transform: capitalize;
   /* background-color: black; */
 
 }
@@ -1517,14 +1622,14 @@ button:focus {
   display: inline-block;
   padding: 50px; /* Adjust padding as needed */
   overflow: hidden;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  /* margin-top: 10rem;
+  margin-bottom: 5rem; */
+  /* margin-left: 10rem;
+  margin-right: 10rem; */
 }
 
-.services-section2::before,
-.services-section2::after {
+.deserve-content::before,
+.deserve-content::after {
   content: "";
   position: absolute;
   width: 0;
@@ -1534,18 +1639,18 @@ button:focus {
   left: 50%;
 }
 
-.services-section2::before {
-  top: 0; /* Border at the top */
+.deserve-content::before {
+  top: 100px; /* Border at the top */
   transform: translateX(-50%);
 }
 
-.services-section2::after {
-  bottom: 0; /* Border at the bottom */
+.deserve-content::after {
+  bottom: 10px; /* Border at the bottom */
   transform: translateX(-50%);
 }
 
-.services-section2:hover::before,
-.services-section2:hover::after {
+.deserve-content:hover::before,
+.deserve-content:hover::after {
   width: 100%; /* Expands to full width */
 }
 
@@ -1554,6 +1659,7 @@ button:focus {
 
 
 .deserve-video{
+
   width: 100%;
   display: flex;
   margin: auto;
@@ -1561,7 +1667,7 @@ button:focus {
 
 .deserve-video video{
   margin: auto;
-  width: 407px;
+  width: 520px;
   height: auto;
 }
 
@@ -1569,16 +1675,18 @@ button:focus {
   width: 100%;
   margin: auto;
   align-items: center;
+
 }
 
 .deserve-head h1{
   color: aliceblue;
-  font-size: 6.5rem;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
+  font-size: 5.5rem;
+  /* font-family: "Bebas Neue", sans-serif; */
+  font-weight: 600;
   font-style: normal;
   line-height: 100px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .deserve-head p{
@@ -1603,18 +1711,16 @@ button:focus {
 /* service why we unique */
 
 
-.services-why-section{
-  height: 100vh;
+/* .services-why-section{
   padding:0;
-  margin:0;
-}
+  margin:auto;
+} */
 
 .services-why{
   /* display: flex; */
   margin: auto;
   justify-content: center;
-  margin-bottom: 4rem;
-  /* height: 100vh; */
+  height: 100%;
 }
 
 .services-why-description{
@@ -1627,9 +1733,11 @@ button:focus {
 
 .services-why-description h1{
   color: #bcc5c5;
-  font-size: 85px;
-  font-family: "poppins",sans-serif;
-padding: 20px 25px;
+  font-size: 5.5rem;
+  /* font-family: "poppins",sans-serif; */
+  padding: 20px 25px;
+  text-transform: capitalize;
+  font-weight: 800;
 
 }
 
@@ -1637,7 +1745,7 @@ padding: 20px 25px;
   color: #bcc5c5;
   font-size: 18px;
   font-family: "poppins",sans-serif;
-padding: 20px 25px;
+  padding: 20px 25px;
 }
 /* service why we unique  ends*/
 
@@ -1720,18 +1828,7 @@ svg.squiggle path{
 }
 
 .gradient-cards {
-
-  /* width: 100%; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 52px;
-  /* padding: 30px; */
-  @media screen and (max-width: 991px) {
-    grid-template-columns: 2fr;
-  }
-  @media screen and (max-width: 571px) {
-    grid-template-columns: 1fr;
-  }
+  padding: 50px 0px;
 }
 
 
@@ -1759,6 +1856,7 @@ svg.squiggle path{
   background-clip: padding-box;
   border-radius: 45px;
   padding: 40px;
+  height: 100%;
   img {
     margin-bottom: 32px;
   }
@@ -1810,6 +1908,7 @@ svg.squiggle path{
 }
 
 .card-title {
+  font-family: "Montserrat Alternates", sans-serif !important;
   font-weight: 600;
   color: white;
   letter-spacing: -0.02em;
@@ -1817,25 +1916,29 @@ svg.squiggle path{
   font-style: normal;
   font-size: 28px;
   padding-bottom: 8px;
+  text-transform: capitalize;
 }
 
 .card-description {
   font-weight: 600;
   line-height: 32px;
-  color: hsla(0, 0%, 100%, 0.5);
-  font-size: 16px;
-  max-width: 470px;
+  color: hsla(0, 0%, 100%, 0.815);
+  font-size: 15px;
+  /* max-width: 470px; */
 }
 
 .card-after-text{
   margin: auto;
+  text-align: left;
+  align-items: center;
   /* border: 1px solid white; */
 }
 
 .card-after-text h1{
   font-family: "poppins",sans-serif;
-  font-size: 60px;
-  font-weight: 500px !important;
+  font-size: 77px;
+  padding-inline: 6rem;
+  font-weight: 800;
  
 }
 
@@ -1901,7 +2004,7 @@ svg.squiggle path{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10000;
+  z-index: 1;
   width: 100%;
   height: 220px;
   transition: 0.5s;
@@ -1917,7 +2020,7 @@ svg.squiggle path{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 170px;
+  width: 110px;
 }
 
 .feature-container .card .contentBx{
@@ -1927,24 +2030,24 @@ svg.squiggle path{
   height: 100px;
   text-align: center;
   transition: 1s;
-  z-index: 10;
+  z-index: 1;
 }
 
 .feature-container .card:hover .contentBx{
-  height: 210px;
+  height: 270px;
   /* margin-bottom: 100px; */
 }
 
 .feature-container .card .contentBx h2{
   position: relative;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 1px;
   color: #fff;
   margin: 0;
   font-size: 30px;
+  text-transform: capitalize;
   /* margin-bottom: 20px !important; */
 }
-
 
 .container .card .contentBx .size, .feature-container .card .contentBx .color {
   display: flex;
@@ -1954,7 +2057,6 @@ svg.squiggle path{
   transition: 0.5s;opacity: 0;
   visibility: hidden;
   padding-top: 0;
-  padding-bottom: 0;
 }
 
 .feature-container .card:hover .contentBx .size{
@@ -1970,12 +2072,15 @@ svg.squiggle path{
 }
 
 .feature-container .card .contentBx .size h3, .feature-container .card .contentBx .color h3{
+  font-family: "Poppins", serif;
+	font-weight: 400;
   color: #fff;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 14px;
   text-transform: capitalize;
   letter-spacing: 2px;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 .feature-container .card .contentBx .size span{
@@ -2057,6 +2162,12 @@ svg.squiggle path{
 /* mediaquery for all responsiveness */
 
 @media (max-width: 1300px) {
+
+  /* #nav-expand{
+    height: auto;
+  } */
+
+
   .about-head{
     font-size: 17rem;
   }
@@ -2066,7 +2177,7 @@ svg.squiggle path{
   }
 
   .text-container{
-    margin-top: -176px ;
+    margin-top: -237px;
   }
 
   .domore {
@@ -2077,12 +2188,17 @@ svg.squiggle path{
     top: auto;
     bottom: auto;
     align-items: center;
+    padding-top: 5rem  !important;
   }
 
-  .domore-head h1{
-    font-size: 4.5rem;
-    line-height: 70px;
-  }
+  .domore-img video {
+    margin-top: 5rem;
+}
+
+  .domore-head h1 {
+    font-size: 1.5rem;
+    line-height: 37px;
+}
 
   /* .domore-img video {
     padding-left: 0;
@@ -2101,6 +2217,11 @@ svg.squiggle path{
 
 .moreabout-para , .moreabout-head{
   padding: 23px 207px;
+}
+
+.footer{
+  height: auto;
+  padding-bottom: 5rem;
 }
 
 .footer-address , .footer-sociallinks{
@@ -2140,17 +2261,72 @@ svg.squiggle path{
 }
 
 .deserve-head h1 {
-  font-size: 15.5rem;
-  line-height: 140px;
+  font-size: 5.5rem;
+  line-height: 83px;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .deserve-head p {
-  font-size: 3rem;
+  font-size: 1rem;
   text-align: center;
-  padding: 10px 54px;
-  margin-top: 5rem;
+  padding: 20px 54px;
+  /* margin-top: 5rem; */
+}
+
+.services-why {
+  height: auto; 
+}
+
+.services-why-image{
+  align-content: center;
+}
+
+.features {
+  padding-top: 4.25rem  !important;
+}
+
+.feature-container{
+  margin-top: -107px;
+  margin-bottom: 5rem;
+}
+
+/* .card-after-text{
+  margin: auto;
+  text-align: left;
+  align-items: center;
+  border: 1px solid white;
+} */
+
+.card-after-text h1{
+  font-size: 62px;
+  font-weight: 800px !important;
+  padding-inline: 1rem !important;
+ 
+}
+
+.deserve-content::before {
+  top: 0; /* Border at the top */
+  transform: translateX(-50%);
+}
+
+.deserve-content::after {
+  bottom: 0; /* Border at the bottom */
+  transform: translateX(-50%);
+}
+
+.deserve-video video {
+  margin: auto;
+  width: 417px;
+  height: auto;
+}
+
+#second{
+  margin-top: 9rem;
+}
+
+.top-head-services{
+  background-position: center !important;
 }
 
 }
@@ -2158,11 +2334,13 @@ svg.squiggle path{
 @media (max-width: 1024px) {
 
   .about-head{
-    font-size: 12rem;
+    font-size: 11rem;
   }
 
   .second-head{
     font-size: 5rem !important;
+    margin-top: 2rem;
+
   }
   
   .first-letter{
@@ -2178,12 +2356,10 @@ svg.squiggle path{
   }
 
   .features{
-    padding-top: 10.25rem !important;
+    padding-top: 7.25rem !important;
   }
 
-  .domore {
-    padding-top: 25vh    !important;
-  }
+
 
   .domore-content {
     padding-top: 2rem;
@@ -2195,8 +2371,8 @@ svg.squiggle path{
 }
 
   .domore-head h1{
-    font-size: 3.5rem;
-    line-height: 70px;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .domore-head p{
@@ -2205,15 +2381,16 @@ svg.squiggle path{
   }
 
   .domore-img video{
-    /* height: 35vh; */
     margin-left: 5rem;
     padding-left: 0;
     margin-top: 100px;
   
   }
 
+
+
   .more-about{
-     padding-top: 17rem !important;
+     padding-top: 7rem !important;
   }
 
 
@@ -2280,30 +2457,33 @@ svg.squiggle path{
 
 
 .services-head {
-  font-size: 15rem;
+  font-size: 11rem;
 }
 
 .gradient-cards {
   grid-template-columns: repeat(2, 1fr);
-  gap: 52px;
+  gap: 15px !important;
+  padding: 108px 0px;
 }
 
+
+
 .deserve-head h1 {
-  font-size: 16.5rem;
-  line-height: 138px;
-  margin-top: 5rem;
+  font-size: 2.5rem;
+  line-height: 38px;
+  margin-top: 1.5rem;
 
 }
 
 .deserve-head p {
-  font-size: 3rem;
+  font-size: 15px;
   padding: 10px 54px;
-  margin-top: 5rem;
+  margin-top: 0rem;
 }
 
 .deserve-video video {
   margin: auto;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 
@@ -2313,13 +2493,14 @@ svg.squiggle path{
   /* background: #64270f; */
 }
 
+
 .services-why-description p {
   font-size: 15px;
   padding: 20px 26px;
 }
 
 .services-why-image{
-  margin-top: 18rem;
+  margin-top: 9rem;
   padding-right: 3rem;
 }
 
@@ -2328,6 +2509,67 @@ svg.squiggle path{
   font-size: 76px;
 
 }
+
+.services-why {
+  height: auto; 
+}
+
+.service-modal-img{
+  display: none;
+}
+
+.service-modal-img1{
+  display: block;
+  object-fit: contain;
+  border-radius: 40px;
+  /* background: #d8262691; */
+  height: 500px;
+  /* width: 100%; */
+  justify-items: center;
+}
+
+.service-modal-img img{
+  object-fit: contain;
+  border-radius: 40px;
+  background: #00000091;
+  height: 500px;
+  width: 100%;
+}
+
+#authOverlay{
+  display: block !important;
+}
+
+#second{
+  display: block;
+  margin-top: 0;
+  width: 100%;
+  padding: 40px 50px !important;
+}
+
+.domore {
+  padding-top: 13rem !important;
+}
+
+.domore .container{
+  border: none;
+}
+
+.deserve {
+  padding-top: 0rem !important;
+}
+
+.feature-sec{
+  padding-top: 0rem !important;
+}
+
+.feature-4s {
+  margin-bottom: 144px;
+  padding:0px 5rem;
+
+}
+
+
 
 }
 
@@ -2345,7 +2587,17 @@ svg.squiggle path{
   }
 
   .domore {
-    padding-top: 25rem !important;
+    padding-top: 13rem !important;
+    display: block; 
+  }
+
+  .domore-head {
+    width: 100%;
+    margin-top: 6rem;
+}
+
+  .domore-content{
+    display: block;
   }
 
   .domore-img video {
@@ -2356,7 +2608,7 @@ svg.squiggle path{
 
 
 .footer-address , .footer-sociallinks{
-  margin-left: 7px;
+  margin-left: 40px;
   margin-top: 11rem;
 }
 .footer-address p , .footer-sociallinks p{
@@ -2365,8 +2617,8 @@ svg.squiggle path{
 }
 
 .newsletter h1{
-  font-size: 25px;
-  line-height: 41px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .newsletter-input{
@@ -2377,8 +2629,11 @@ svg.squiggle path{
 }
 
 .footer-newsletter{
-  margin-right: -45px;
-  margin-top: 13rem;
+  /* margin-right: -45px;
+  margin-top: 12rem;
+  margin-left: 19px; */
+  margin-right: -22px;
+  margin-top: 12rem;
   margin-left: 19px;
 }
 
@@ -2413,12 +2668,22 @@ svg.squiggle path{
 
 }
 
-.card-after-text h1 {
-  font-size: 89px;
-  margin-left: 2rem;
+.card-after-text{
+  margin: auto;
+  text-align: left;
+  align-items: center;
+  /* border: 1px solid white; */
 }
 
-.deserve-head h1 {
+.card-after-text h1{
+  font-family: "poppins",sans-serif;
+  font-size: 54px;
+  font-weight: 400px !important;
+  padding-inline: 1rem !important;
+ 
+}
+
+/* .deserve-head h1 {
   font-size: 12.5rem;
   line-height: 100px;
   text-align: center;
@@ -2429,7 +2694,7 @@ svg.squiggle path{
 .deserve-head p {
   font-size: 3rem;
   padding: 10px 9px;
-}
+} */
 
 .services-why-description {
   margin-top: 20px;
@@ -2454,6 +2719,45 @@ svg.squiggle path{
   gap: 52px;
 }
 
+.services-why {
+  height: auto; 
+  margin: auto;
+  justify-content: center;
+  /* height: 100%; */
+}
+
+.footer {
+  height: auto;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+
+.domore-img video{
+  display: none;
+}
+
+.domore-img1 video{
+  display: block;
+}
+
+.deserve-content::before {
+  top: 100px; /* Border at the top */
+  transform: translateX(-50%);
+}
+
+.deserve-content::after {
+  bottom: 60px; /* Border at the bottom */
+  transform: translateX(-50%);
+}
+
+.feature-4s {
+  margin-bottom: 144px;
+  padding:0px 3rem;
+
+}
+
+
 }
 
 @media (max-width: 720px){
@@ -2463,6 +2767,11 @@ svg.squiggle path{
 
 .domore-content {
   padding-left: 29px;
+}
+
+.domore-head h1 {
+  font-size: 1.5rem;
+  line-height: 29px;
 }
 
 .domore-head p {
@@ -2486,6 +2795,27 @@ svg.squiggle path{
   margin-top: 109px;
 }
 
+.services-why {
+  height: auto; 
+  margin: auto;
+  justify-content: center;
+  /* height: 100%; */
+}
+
+.domore-img video{
+  display: none;
+}
+
+.domore-img1 video{
+  display: block;
+}
+
+.service-modal-img1{
+  height: auto;
+
+}
+
+
 }
 
 
@@ -2493,7 +2823,8 @@ svg.squiggle path{
 @media (max-width: 540px){
   .about-head{
     font-size: 6rem;
-    bottom: 12px;
+    bottom: 41px;
+    line-height: 74px;
   }
 
   .about {
@@ -2512,7 +2843,7 @@ svg.squiggle path{
   margin-top: -280px;
 }
 .domore {
-  padding-top: 9rem !important;
+  padding-top: 10rem  !important;
 }
 
 .domore-content {
@@ -2521,12 +2852,18 @@ svg.squiggle path{
   
 }
 
+.domore .container{
+  border: none !important;
+}
+
 .domore-head {
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 41px;
 }
 
 .domore-head h1 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 29px;
 }
 
@@ -2537,6 +2874,15 @@ svg.squiggle path{
 .domore-img video{
   display: none;
 }
+
+.domore-img1 video{
+  display: block;
+}
+
+.features {
+  padding-top: 4.25rem  !important;
+}
+
 
 .feature-container{
   display: block !important;
@@ -2563,20 +2909,30 @@ svg.squiggle path{
 
 .feature-container {
   margin-top: -106px;
+  margin-bottom: 41px;
 }
 
 .moreabout-head, .moreabout-para {
   padding: 20px 10px;
 }
 
-  .footer-address, .footer-sociallinks {
-    margin-top: 2rem !important;
+.more-about {
+  padding-top: 6rem !important;
+}
+
+  .footer-address {
+    margin-top: 8rem !important;
     margin-left: 25px !important;
+}
+
+.footer-sociallinks{
+  margin-top: 2rem !important;
+  margin-left: 25px !important;
 }
 
 
 .footer-newsletter {
-  margin-top: 4rem !important;
+  margin-top: 1rem !important;
   margin-left: 25px !important;
 }
 
@@ -2590,6 +2946,11 @@ svg.squiggle path{
   padding: 5px 8px;
   width: 50%;;
 }
+
+.footer-email h4 {
+  margin-top: 36px;
+}
+
 
 .copyright {
   margin-top: 34px;
@@ -2615,47 +2976,57 @@ svg.squiggle path{
 /* services page responsive */
 
 .services-head {
-  font-size: 5rem;
+  font-size: 4rem;
   bottom: 70px;
+  text-transform: capitalize;
 
 }
 
 .deserve {
-  padding-top: 0px !important;
+  padding-top: 40px !important;
 }
 
 
 .deserve-head h1 {
-  font-size: 6.5rem;
-  line-height: 60px;
-  margin-top: 3rem;
+  font-size: 2.5rem;
+  line-height: 45px;
+  margin-top: 0rem;
 }
 
 .deserve-head p {
-  font-size: 1rem;
+  font-size: 11px;
   text-align: center;
   padding: 10px 0px;
-  margin-top: 3rem;
+  margin-top: 0rem;
+}
+
+.services-why {
+  height: auto; 
+  margin: auto;
+  justify-content: center;
+  /* height: 100%; */
 }
 
 .services-why-description {
   width: 100%;
+  margin-top: 0px;
 }
 
 .services-why-description h1 {
-  font-size: 33px;
-  padding: 20px 20px;
+  font-size: 35px;
+  padding: 25px 20px;
 }
 
 .services-why-description p {
   font-size: 15px;
-  padding: 0px 20px;
+  padding: 30px 20px;
   text-align: left;
 }
 
 .services-why-image-hide{
   display: block;
   margin-left: 0px;
+  margin-bottom: -87px;
 
 }
 
@@ -2663,9 +3034,122 @@ svg.squiggle path{
   display:none;
 }
 
+.container-card {
+  padding: 22px;
+  /* height: -webkit-fill-available !important; */
+}
+
+.card-after-text h1 {
+  font-size: 46px;
+}
+
+.services-section2{
+  margin-bottom: 0px;
+  margin-top: 1rem;
+  padding: 20px;
+}
+
+.services-why-section{
+  padding-top: 0px !important;
+  margin-top: 0px;
+}
+
+.service-modal-head h1 {
+  font-size: 40px;
+}
+
+.service-modal-para p {
+  font-size: 15px;
+}
+
+#second {
+  padding: 0px 0px !important;
+  align-content: left;
+  padding-right: 50px !important;
+}
+
+.back-btn button {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.feature-4s p {
+  color: #bcc5c5;
+  font-size: 13px;
+  /* padding: 0px 20rem; */
+}
+
+.feature-4s {
+  margin-top: -8rem;
+  margin-bottom: 144px;
+  padding: 0px 30px;
+
+}
+
+.four-s {
+  font-family: "headingfont" !important;
+  font-size: 32px;
+  color: #afd766;
+}
+
+.four-span {
+  font-size: 32px;
+  /* color: #4fc8edb9; */
+  font-weight: bolder;
+  font-family: "headingfont";
+}
+
+.top-head-services{
+  background-size: contain;
+}
 
 
 }
+
+@media (max-width: 400px){
+  .deserve-content::before,
+.deserve-content::after {
+  background-color: none;
+}
+
+.deserve-content::before {
+  top: 0; /* Border at the top */
+  transform: translateX(-50%);
+}
+
+.deserve-content::after {
+  bottom: 0; /* Border at the bottom */
+  transform: translateX(-50%);
+}
+
+.deserve-content:hover::before,
+.deserve-content:hover::after {
+  width: 100%; /* Expands to full width */
+}
+}
+
+
+
+
+
+.about-span{
+  transition: color 0.5s ease;
+}
+
+
+
+.weare-also{
+  font-family: 'poppins',sans-serif !important;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+
 
 
 

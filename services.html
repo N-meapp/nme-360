@@ -1,5 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nme-360</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/service.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <meta
+      name="description"
+      content="particles.js is a lightweight JavaScript library for creating particles."
+    />
+    <meta name="author" content="Vincent Garreau" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head> -->
+
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,13 +84,9 @@
 
     <!-- icon cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
   </head>
@@ -40,434 +99,504 @@
       height="0"
     /> -->
     <!-- navbar -->
-    <div id="nav-bar" class="fixed top-0 w-full z-20 flex justify-between px-8 md:px-20">
-     <div>
-        <img class="w-20 md:w-28" src="./assets/images/N-ME 360 LOGO WHITE PNG.png" />
-      </div>
+    <div
+      id="nav-bar"
+      class="fixed top-0 w-full z-20 flex justify-between px-8 md:px-20"
+    >
+    <div>
+      <img id="logo"
+        class="w-20 md:w-28 transition-all"
+        src="./assets/images/N-ME 360 LOGO WHITE PNG.png"
+      />
+    </div>
 
-       <div id="handburger" onclick="handleNavbar()" class="content-center cursor-pointer ">
-        <div id="colapse1" class="h-[2px] rounded w-8 bg-white mb-2"></div>
-        <div id="colapse2" class="h-[2px] rounded w-8 bg-white mb-2"></div>
-        <div id="colapse3" class="h-[2px] rounded w-10 bg-white mb-2"></div>
+      <div
+        id="handburger"
+        onclick="handleNavbar()"
+        class="content-center cursor-pointer"
+      >
+        <div id="colapse1" class="h-[2px] rounded bg-white w-8 mb-2"></div>
+        <div id="colapse2" class="h-[2px] rounded bg-white w-8 mb-2"></div>
+        <div id="colapse3" class="h-[2px] rounded bg-white w-10 mb-2"></div>
       </div>
     </div>
 
-    <div id="nav-expand" class="w-full h-0 bg-black fixed z-10 navExpand h-[100vh] mt-[-1080px]">
-      <div id="nav-main-tab" class="h-0 w-full flex navExpand mt-40 px-20">
-        <div class="w-1/2 text-white mb">
-          <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
-            <h1 class="font-bold">Home</h1>
+    <div
+      id="nav-expand"
+      class="opacity-0 w-full bg-black fixed z-10  navExpand h-[100vh] mt-[-1080px] h-full"
+    >
+      <div id="nav-main-tab" class="h-0 w-full flex navExpand mt-40 px-20 h-fit justify-center">
+        <div class="w-3/4 text-white mb">
+          <a href="index.html">
+            <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+              <h1 class="font-bold">Home</h1>
+            </div>
+          </a>
+          <a href="about.html">
+            <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+              <h1 class="font-bold">About</h1>
+            </div>
+          </a>
+          <a href="service1.html">
+            <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+              <h1 class="font-bold">Services</h1>
+            </div>
+          </a>
+          <a href="contact.html">
+            <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+              <h1 class="font-bold">Contact us</h1>
+            </div>
+          </a>
+        </div>
+
+        <!-- <div class="w-1/2 text-white"></div> -->
+      </div>
+    </div>
+
+    <div class="top-head-services each-section">
+      <h1 class="services-head">services</h1>
+    </div>
+
+    <div id="authOverlay" class="opacity-0 fixed z-10 left-0 top-0 h-full w-full flex py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
+
+      <div class="service-modal-img1">
+        <img id="modal-image1" src="" alt="" />
+      </div>
+
+
+      <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl scale-y-0">
+        <div id="third" class="relative scale-y-0">
+          <div class="service-modal-head">
+            <h1 id="modal-title"></h1>
           </div>
-          <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
-            <h1 class="font-bold">About</h1>
+          <div class="service-modal-para">
+            <p id="modal-description"></p>
           </div>
-          <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
-            <h1 class="font-bold">Services</h1>
-          </div>
-          <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
-            <h1 class="font-bold">Contact us</h1>
+        </div>
+      </div>
+      <div class="back-btn">
+        <button onclick="closeAuthModal()">back</button>
+   
+      </div>
+      <div class="service-modal-img">
+        <img id="modal-image" src="" alt="" />
+      </div>
+    </div>
+
+    <section class="each-section container content-center">
+      <div class="gradient-cards grid  gap-[32px]  lg:grid-cols-3 sm:grid-cols-2  grid-cols-1 lg:pt-[7rem] scrollable">
+        <div class="card " onclick="openAuthModal('web development','At Nme 360, we craft exceptional web experiences that blend innovation, functionality, and design. Our expert team delivers customized web development solutions, creating responsive, visually stunning websites that captivate users and drive business growth. Whether you are launching a new site, revamping an existing one, or adding advanced features, we ensure seamless performance and optimized user journeys across all devices. With a focus on cutting-edge technologies and strategic design, Nme 360 helps you build a powerful online presence that stands out in today’s competitive digital landscape. Let’s turn your vision into a dynamic, high-performing website that elevates your brand.','assets/images/web (2).png','assets/images/web (2).png')">
+          <div class="container-card bg-green-box">
+            <img src="./assets/images/web.png" alt="" width="80" height="80" />
+            <!-- <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4547)" fill-opacity="0.15" stroke="url(#paint1_radial_1366_4547)" stroke-width="2"></rect>
+              <path d="M33.2182 61.4C33.2182 75.425 37.2682 86.75 51.5932 86.75C65.9182 86.75 69.8182 75.425 69.8182 61.4C69.8182 47.225 65.9182 35.9 51.5932 35.9C37.2682 35.9 33.2182 47.225 33.2182 61.4ZM43.7182 61.4C43.7182 53.075 45.5932 46.1 51.5932 46.1C57.5182 46.1 59.3182 53.075 59.3182 61.4C59.3182 69.65 57.5182 76.55 51.5932 76.55C45.5932 76.55 43.7182 69.65 43.7182 61.4Z" fill="#54E8A9"></path>
+              <path d="M87.7143 36.35L78.0543 56H80.1243L89.7843 36.35H87.7143ZM74.6943 40.16C74.6943 42.44 76.4043 44.15 78.6843 44.15C80.9343 44.15 82.7043 42.44 82.7043 40.16C82.7043 37.91 80.9343 36.14 78.6843 36.14C76.4043 36.14 74.6943 37.91 74.6943 40.16ZM77.1243 40.16C77.1243 39.29 77.7543 38.57 78.6843 38.57C79.5543 38.57 80.2743 39.29 80.2743 40.16C80.2743 41.09 79.5543 41.72 78.6843 41.72C77.7543 41.72 77.1243 41.09 77.1243 40.16ZM85.3143 52.31C85.3143 54.59 87.0243 56.3 89.3043 56.3C91.5543 56.3 93.3243 54.59 93.3243 52.31C93.3243 50.06 91.5543 48.29 89.3043 48.29C87.0243 48.29 85.3143 50.06 85.3143 52.31ZM87.7443 52.31C87.7443 51.44 88.3743 50.72 89.3043 50.72C90.1743 50.72 90.8943 51.44 90.8943 52.31C90.8943 53.24 90.1743 53.87 89.3043 53.87C88.3743 53.87 87.7443 53.24 87.7443 52.31Z" fill="#2FCB89"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4547" x1="0.0063367" y1="0.168432" x2="120.853" y2="119.009" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#2FCB89" stop-opacity="0.7"></stop>
+                  <stop offset="0.489583" stop-color="#2FCB89" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#2FCB89" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4547" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#54E8A9"></stop>
+                  <stop offset="1" stop-color="#1A3E31" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg> -->
+            <p class="card-title">web development</p>
+            <p class="card-description">
+              It's more than coding; it's about crafting an online presence that reflects your brand.
+            </p>
           </div>
         </div>
 
-        <div class="w-1/2 text-white"></div>
+        <div
+          class="card"
+          onclick="openAuthModal('app development','We transform your ideas into innovative mobile apps that fuel business growth. Our custom App Development services cater to businesses of all sizes, blending the latest technologies with intuitive, user-friendly designs. Whether you are looking for iOS, Android, or cross-platform development, we ensure your app is secure, engaging, and optimized for an exceptional user experience. From concept and UI/UX design to seamless development, rigorous testing, and ongoing support, we’re with you every step of the way. Let us help you create an app that not only meets your goals but also captivates and retains your users.','assets/images/app-development.png','assets/images/app-development.png')"
+        >
+          <div class="container-card bg-green-box">
+            <img src="./assets/images/app.png" alt="" width="80" height="80" />
+            <!-- <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4547)" fill-opacity="0.15" stroke="url(#paint1_radial_1366_4547)" stroke-width="2"></rect>
+              <path d="M33.2182 61.4C33.2182 75.425 37.2682 86.75 51.5932 86.75C65.9182 86.75 69.8182 75.425 69.8182 61.4C69.8182 47.225 65.9182 35.9 51.5932 35.9C37.2682 35.9 33.2182 47.225 33.2182 61.4ZM43.7182 61.4C43.7182 53.075 45.5932 46.1 51.5932 46.1C57.5182 46.1 59.3182 53.075 59.3182 61.4C59.3182 69.65 57.5182 76.55 51.5932 76.55C45.5932 76.55 43.7182 69.65 43.7182 61.4Z" fill="#54E8A9"></path>
+              <path d="M87.7143 36.35L78.0543 56H80.1243L89.7843 36.35H87.7143ZM74.6943 40.16C74.6943 42.44 76.4043 44.15 78.6843 44.15C80.9343 44.15 82.7043 42.44 82.7043 40.16C82.7043 37.91 80.9343 36.14 78.6843 36.14C76.4043 36.14 74.6943 37.91 74.6943 40.16ZM77.1243 40.16C77.1243 39.29 77.7543 38.57 78.6843 38.57C79.5543 38.57 80.2743 39.29 80.2743 40.16C80.2743 41.09 79.5543 41.72 78.6843 41.72C77.7543 41.72 77.1243 41.09 77.1243 40.16ZM85.3143 52.31C85.3143 54.59 87.0243 56.3 89.3043 56.3C91.5543 56.3 93.3243 54.59 93.3243 52.31C93.3243 50.06 91.5543 48.29 89.3043 48.29C87.0243 48.29 85.3143 50.06 85.3143 52.31ZM87.7443 52.31C87.7443 51.44 88.3743 50.72 89.3043 50.72C90.1743 50.72 90.8943 51.44 90.8943 52.31C90.8943 53.24 90.1743 53.87 89.3043 53.87C88.3743 53.87 87.7443 53.24 87.7443 52.31Z" fill="#2FCB89"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4547" x1="0.0063367" y1="0.168432" x2="120.853" y2="119.009" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#2FCB89" stop-opacity="0.7"></stop>
+                  <stop offset="0.489583" stop-color="#2FCB89" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#2FCB89" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4547" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#54E8A9"></stop>
+                  <stop offset="1" stop-color="#1A3E31" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg> -->
+            <p class="card-title">app development</p>
+            <p class="card-description">
+              We turn your ideas into impactful mobile apps, blending the latest tech with user-friendly designs.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="openAuthModal('ui/ux development','Our team specializes in developing visually appealing and user-friendly interfaces that deliver the best user experience across all devices. A thoughtfully crafted UI/UX not only enhances your brand’s professionalism but also helps reduce development costs by minimizing the need for future revisions. This makes it a vital element of our comprehensive IT solutions. We focus on creating intuitive, engaging, and visually captivating interactions, ensuring your website or app stands out. Whether you are building a new platform or revamping an existing one, we ensure every interaction reflects your brand’s values and leaves a lasting impression on your audience.','assets/images/download (2).png')"
+        >
+          <div class="container-card bg-white-box">
+            <img
+              src="./assets/images/uiux.png"
+              alt=""
+              width="80"
+              height="80"
+            />
+            <!-- <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4565)" fill-opacity="0.15" stroke="url(#paint1_radial_1366_4565)" stroke-width="2"></rect>
+              <ellipse rx="21.9462" ry="22.2891" transform="matrix(0.964749 0.263173 -0.254526 0.967066 60.1463 63.0804)" stroke="white" stroke-width="1.00101" stroke-linecap="round" stroke-dasharray="4 5.01"></ellipse>
+              <ellipse rx="17.4359" ry="17.5832" transform="matrix(-1 0 0 1 60.1466 39.5834)" fill="white"></ellipse>
+              <path d="M63.5924 38.93C64.4717 38.4692 65.0312 37.6495 64.9014 36.2874C64.7314 34.4228 63.2378 33.7982 61.2597 33.624V31.0427H59.721V33.5522C59.3212 33.5522 58.9118 33.5626 58.5019 33.5725V31.0427H56.9631V33.624C56.3974 33.6416 55.7384 33.6328 53.876 33.624V35.3039C55.0905 35.282 55.7283 35.2019 55.8744 36.0003V43.0678C55.7815 43.7013 55.2869 43.6103 54.186 43.5905L53.8765 45.4649C56.682 45.4649 56.9641 45.4754 56.9641 45.4754V47.6858H58.5029V45.506C58.9224 45.5164 59.3319 45.5164 59.722 45.5164V47.6863H61.2607V45.4759C63.8385 45.3323 65.5619 44.6666 65.7917 42.1774C65.9713 40.1803 65.0526 39.2888 63.5935 38.9305L63.5924 38.93ZM58.5318 35.4167C59.4008 35.4167 62.1186 35.14 62.1186 36.9942C62.1186 38.7661 59.4008 38.5612 58.5318 38.5612V35.4167ZM58.5318 43.6004V40.1381C59.5708 40.1381 62.7528 39.8412 62.7528 41.869C62.7528 43.8256 59.5708 43.5999 58.5318 43.5999V43.6004Z" fill="#2E3042"></path>
+              <path d="M82.5643 62.834C92.1944 62.834 100 70.7058 100 80.4172C100 90.1286 92.1944 98.0004 82.5643 98.0004C72.9342 98.0004 65.1284 90.1286 65.1284 80.4172C65.1284 70.7058 72.9342 62.834 82.5643 62.834ZM92.0516 84.2822H76.3964C76.2271 84.282 76.0646 84.3491 75.9441 84.469L72.8514 87.5626C72.8065 87.6073 72.7759 87.6645 72.7634 87.7269C72.751 87.7893 72.7573 87.854 72.7815 87.9128C72.8057 87.9716 72.8468 88.0217 72.8994 88.0568C72.9521 88.0919 73.0139 88.1104 73.077 88.1098H88.7323C88.9015 88.11 89.064 88.0429 89.1845 87.923L92.2772 84.8284C92.3217 84.7836 92.352 84.7264 92.3643 84.6642C92.3765 84.602 92.3701 84.5376 92.346 84.479C92.3218 84.4205 92.2809 84.3705 92.2285 84.3355C92.1761 84.3004 92.1145 84.2819 92.0516 84.2822ZM88.7323 78.4665H73.077L73.0029 78.4742C72.9476 78.487 72.8968 78.5146 72.8556 78.5539C72.8145 78.5933 72.7846 78.6431 72.769 78.6981C72.7534 78.7531 72.7527 78.8113 72.767 78.8666C72.7813 78.9219 72.8101 78.9724 72.8503 79.0127L75.9452 82.1074L76.0215 82.1733C76.1305 82.2502 76.2612 82.2942 76.3964 82.2942H92.0516L92.1257 82.2865C92.181 82.2737 92.2319 82.2462 92.273 82.2068C92.3141 82.1674 92.3441 82.1177 92.3596 82.0627C92.3752 82.0077 92.3759 81.9495 92.3616 81.8941C92.3473 81.8388 92.3185 81.7883 92.2783 81.748L89.1834 78.6534L89.1071 78.5874C88.9978 78.5086 88.8667 78.4663 88.7323 78.4665Z" fill="white"></path>
+              <path d="M92.0507 84.5023H76.3954C76.2262 84.5022 76.0637 84.57 75.9432 84.6911L72.8505 87.8164C72.8056 87.8616 72.775 87.9194 72.7625 87.9825C72.75 88.0455 72.7563 88.1109 72.7806 88.1703C72.8048 88.2296 72.8458 88.2803 72.8985 88.3158C72.9511 88.3512 73.013 88.3699 73.0761 88.3693H88.7313C88.9006 88.3695 89.0631 88.3017 89.1836 88.1806L92.2763 85.0541C92.3208 85.0089 92.3511 84.9512 92.3633 84.8883C92.3756 84.8255 92.3692 84.7604 92.345 84.7012C92.3208 84.6421 92.2799 84.5916 92.2275 84.5562C92.1751 84.5208 92.1136 84.502 92.0507 84.5023ZM88.7313 78.627H73.0761L73.002 78.6347C72.9467 78.6477 72.8958 78.6755 72.8547 78.7152C72.8136 78.755 72.7836 78.8053 72.7681 78.8608C72.7525 78.9164 72.7518 78.9752 72.7661 79.0311C72.7804 79.087 72.8092 79.138 72.8494 79.1787L75.9443 82.3052L76.0206 82.3718C76.1295 82.4495 76.2603 82.4939 76.3954 82.4939H92.0507L92.1248 82.4861C92.1801 82.4732 92.2309 82.4454 92.2721 82.4056C92.3132 82.3659 92.3431 82.3156 92.3587 82.26C92.3743 82.2045 92.375 82.1457 92.3606 82.0898C92.3463 82.0338 92.3176 81.9829 92.2773 81.9421L89.1825 78.8157L89.1062 78.7491C88.9968 78.6694 88.8657 78.6267 88.7313 78.627ZM92.0507 72.8259H76.3954C76.2262 72.8258 76.0637 72.8936 75.9432 73.0147L72.8505 76.1411C72.806 76.1864 72.7757 76.2441 72.7634 76.3069C72.7512 76.3698 72.7576 76.4349 72.7817 76.4941C72.8059 76.5532 72.8468 76.6037 72.8992 76.6391C72.9516 76.6745 73.0132 76.6932 73.0761 76.6929H88.7313C88.9006 76.6931 89.0631 76.6253 89.1836 76.5042L92.2763 73.3788C92.3212 73.3336 92.3518 73.2758 92.3643 73.2128C92.3767 73.1498 92.3704 73.0844 92.3462 73.025C92.322 72.9656 92.2809 72.915 92.2283 72.8795C92.1756 72.844 92.1138 72.8254 92.0507 72.8259Z" fill="#2E3042"></path>
+              <ellipse cx="37.4359" cy="78.7687" rx="17.4359" ry="17.5832" fill="white"></ellipse>
+              <path d="M43.9081 78.9791L37.4362 82.8079L30.96 78.9791L37.4362 68.2188L43.9081 78.9791ZM37.4362 84.0374L30.96 80.2086L37.4362 89.3434L43.9124 80.2086L37.4362 84.0374Z" fill="#2E3042"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4565" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.7"></stop>
+                  <stop offset="0.505208" stop-color="white" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="white" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4565" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="white"></stop>
+                  <stop offset="1" stop-color="#363437" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg> -->
+            <p class="card-title">ui/ux development</p>
+            <p class="card-description">
+              A well-crafted UI/UX elevates your brand, reduces future revisions, and is key to our IT solutions.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="openAuthModal('digital marketing','In today’s hyper-connected world, digital marketing is no longer optional—it’s essential. Whether you’re a growing startup or an established enterprise, digital marketing is the key to enhancing your brand’s visibility, driving growth, and ensuring long-term success. Investing in digital marketing offers numerous advantages: it expands your reach, delivers cost-effective advertising, and provides measurable results. With targeted strategies, you can connect with the right audience at the right time. This approach drives higher conversion rates and maximizes your ROI, positioning your brand for sustained success in an increasingly competitive marketplace.','assets/images/digital-marketing-modal.png','assets/images/digital-marketing-modal.png')"
+        >
+          <div class="container-card bg-yellow-box">
+            <img
+              src="./assets/images/digital marketing.png"
+              alt=""
+              width="80"
+              height="80"
+            />
+            <!-- <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4557)" fill-opacity="0.15" stroke="url(#paint1_radial_1366_4557)" stroke-width="2"></rect>
+              <path d="M74.2105 36C73.373 36 72.5698 35.6839 71.9776 35.1213C71.3853 34.5587 71.0526 33.7956 71.0526 33C71.0526 32.2044 71.3853 31.4413 71.9776 30.8787C72.5698 30.3161 73.373 30 74.2105 30H86.8421C87.6796 30 88.4829 30.3161 89.0751 30.8787C89.6673 31.4413 90 32.2044 90 33V45C90 45.7956 89.6673 46.5587 89.0751 47.1213C88.4829 47.6839 87.6796 48 86.8421 48C86.0046 48 85.2014 47.6839 84.6091 47.1213C84.0169 46.5587 83.6842 45.7956 83.6842 45V40.242L65.3905 57.621C64.7983 58.1834 63.9953 58.4994 63.1579 58.4994C62.3205 58.4994 61.5175 58.1834 60.9253 57.621L52.1053 49.242L35.3905 65.121C34.7949 65.6675 33.9972 65.9699 33.1693 65.963C32.3413 65.9562 31.5492 65.6407 30.9637 65.0845C30.3782 64.5282 30.0461 63.7758 30.0389 62.9892C30.0317 62.2026 30.35 61.4448 30.9253 60.879L49.8726 42.879C50.4648 42.3166 51.2679 42.0006 52.1053 42.0006C52.9426 42.0006 53.7457 42.3166 54.3379 42.879L63.1579 51.258L79.219 36H74.2105ZM36.3158 78V87C36.3158 87.7957 35.9831 88.5587 35.3909 89.1213C34.7986 89.6839 33.9954 90 33.1579 90C32.3204 90 31.5171 89.6839 30.9249 89.1213C30.3327 88.5587 30 87.7957 30 87V78C30 77.2043 30.3327 76.4413 30.9249 75.8787C31.5171 75.3161 32.3204 75 33.1579 75C33.9954 75 34.7986 75.3161 35.3909 75.8787C35.9831 76.4413 36.3158 77.2043 36.3158 78ZM52.1053 66C52.1053 65.2043 51.7726 64.4413 51.1803 63.8787C50.5881 63.3161 49.7849 63 48.9474 63C48.1098 63 47.3066 63.3161 46.7144 63.8787C46.1222 64.4413 45.7895 65.2043 45.7895 66V87C45.7895 87.7957 46.1222 88.5587 46.7144 89.1213C47.3066 89.6839 48.1098 90 48.9474 90C49.7849 90 50.5881 89.6839 51.1803 89.1213C51.7726 88.5587 52.1053 87.7957 52.1053 87V66ZM64.7368 69C65.5744 69 66.3776 69.3161 66.9698 69.8787C67.562 70.4413 67.8947 71.2043 67.8947 72V87C67.8947 87.7957 67.562 88.5587 66.9698 89.1213C66.3776 89.6839 65.5744 90 64.7368 90C63.8993 90 63.0961 89.6839 62.5039 89.1213C61.9117 88.5587 61.5789 87.7957 61.5789 87V72C61.5789 71.2043 61.9117 70.4413 62.5039 69.8787C63.0961 69.3161 63.8993 69 64.7368 69ZM83.6842 57C83.6842 56.2044 83.3515 55.4413 82.7593 54.8787C82.1671 54.3161 81.3638 54 80.5263 54C79.6888 54 78.8856 54.3161 78.2933 54.8787C77.7011 55.4413 77.3684 56.2044 77.3684 57V87C77.3684 87.7957 77.7011 88.5587 78.2933 89.1213C78.8856 89.6839 79.6888 90 80.5263 90C81.3638 90 82.1671 89.6839 82.7593 89.1213C83.3515 88.5587 83.6842 87.7957 83.6842 87V57Z" fill="#FFEE24"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4557" x1="-0.0208152" y1="-0.102528" x2="119.899" y2="119.817" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFE34B" stop-opacity="0.7"></stop>
+                  <stop offset="0.510417" stop-color="#FFE34B" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#FFE34B" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4557" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#FFEE24"></stop>
+                  <stop offset="1" stop-color="#302A1A" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg> -->
+            <p class="card-title">digital marketing</p>
+            <p class="card-description">
+              A startup or enterprise, digital marketing drives your brand's visibility, growth, and success.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="openAuthModal('branding and designing','Branding and design are at the core of your business identity, shaping how your company is perceived in the market. It’s not just about a logo or a tagline—it’s about creating a unique, memorable presence that differentiates you from competitors. A strong brand fosters trust, loyalty, and lasting connections with your audience. Our design experts focus on delivering innovative, modern visuals that not only capture attention but effectively communicate your brand’s message. By combining strategic branding with creative design, we ensure your business stands out, engages customers, and builds long-term success. Let’s bring your brand to life','assets/images/branding (1).png','assets/images/branding (1).png')"
+        >
+          <div class="container-card bg-blue-box">
+            <img src="./assets/images/branding.png" alt="" width="80" height="80" />
+            <!-- <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4582)" fill-opacity="0.15" stroke="url(#paint1_radial_1366_4582)" stroke-width="2"></rect>
+              <path d="M90.9405 64.775L88.0155 69.55L85.1155 64.775H80.0655L85.5155 72.85L79.5905 82H84.4905L88.0155 76.175L91.5155 82H96.4405L90.4905 72.85L95.9405 64.775H90.9405Z" fill="#87A1FF"></path>
+              <path d="M44.9833 35.52L27.3433 43.92V52.53L35.1833 49.17V82H44.9833V35.52ZM71.37 35.52L53.73 43.92V52.53L61.57 49.17V82H71.37V35.52Z" fill="#87A1FF"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4582" x1="120.194" y1="119.827" x2="-13.1225" y2="17.1841" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#61A0FF" stop-opacity="0.7"></stop>
+                  <stop offset="0.489583" stop-color="#61A0FF" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#61A0FF" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4582" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#87A1FF"></stop>
+                  <stop offset="1" stop-color="#16161D" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg> -->
+            <p class="card-title">branding and designing</p>
+            <p class="card-description">
+              Branding and design define your business, crafting unique, modern visuals that engage and connect with your audience
+            </p>
+          </div>
+        </div>
+
+
+        <div
+          class="card"
+          onclick="openAuthModal('Search Engine optimization','Elevate your online presence with our expert SEO services designed to drive organic traffic and boost search engine rankings. We employ proven strategies, including comprehensive keyword research, on-page and off-page optimization, and technical SEO to enhance your website’s visibility. Our team crafts customized SEO solutions tailored to your business goals, ensuring maximum impact and long-term growth. From optimizing your content to improving site speed and structure, we focus on delivering measurable results that increase traffic and conversions. Let us help you stay ahead of the competition and achieve sustainable business growth through effective, results-driven SEO strategies','assets/images/seo (2).png','assets/images/seo (2).png')"
+        >
+          <div class="container-card bg-blue-box">
+            <img src="./assets/images/seo.png" alt="" width="80" height="80" />
+            <!-- <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4582)" fill-opacity="0.15" stroke="url(#paint1_radial_1366_4582)" stroke-width="2"></rect>
+              <path d="M90.9405 64.775L88.0155 69.55L85.1155 64.775H80.0655L85.5155 72.85L79.5905 82H84.4905L88.0155 76.175L91.5155 82H96.4405L90.4905 72.85L95.9405 64.775H90.9405Z" fill="#87A1FF"></path>
+              <path d="M44.9833 35.52L27.3433 43.92V52.53L35.1833 49.17V82H44.9833V35.52ZM71.37 35.52L53.73 43.92V52.53L61.57 49.17V82H71.37V35.52Z" fill="#87A1FF"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4582" x1="120.194" y1="119.827" x2="-13.1225" y2="17.1841" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#61A0FF" stop-opacity="0.7"></stop>
+                  <stop offset="0.489583" stop-color="#61A0FF" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#61A0FF" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4582" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#87A1FF"></stop>
+                  <stop offset="1" stop-color="#16161D" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg> -->
+            <p class="card-title">SEO</p>
+            <p class="card-description">
+              Boost your visibility, drive organic traffic, and dominate search rankings with our expert SEO services.
+            </p>
+          </div>
+        </div>
+        <!--   
+        <div class="card" onclick="openAuthModal('sangeeth','It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.','assets/images/smart.png')">
+          <div class="container-card bg-blue-box">
+            <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4582)" fill-opacity="0.15" stroke="url(#paint1_radial_1366_4582)" stroke-width="2"></rect>
+              <path d="M90.9405 64.775L88.0155 69.55L85.1155 64.775H80.0655L85.5155 72.85L79.5905 82H84.4905L88.0155 76.175L91.5155 82H96.4405L90.4905 72.85L95.9405 64.775H90.9405Z" fill="#87A1FF"></path>
+              <path d="M44.9833 35.52L27.3433 43.92V52.53L35.1833 49.17V82H44.9833V35.52ZM71.37 35.52L53.73 43.92V52.53L61.57 49.17V82H71.37V35.52Z" fill="#87A1FF"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4582" x1="120.194" y1="119.827" x2="-13.1225" y2="17.1841" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#61A0FF" stop-opacity="0.7"></stop>
+                  <stop offset="0.489583" stop-color="#61A0FF" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#61A0FF" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4582" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#87A1FF"></stop>
+                  <stop offset="1" stop-color="#16161D" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg>
+            <p class="card-title">software installation</p>
+            <p class="card-description">Hubble’s capital-efficient 110% collateral ratio lets users leverage up to 11x on their deposits.</p>
+          </div>
+        </div>
+   -->
+        <div
+          class="card"
+          onclick="openAuthModal('software installation','We leverage the Software Development Lifecycle (SDLC) approach to build innovative, high-quality software applications. From planning and requirement gathering to design, implementation, testing, and maintenance, our structured process ensures every stage is meticulously executed. By following SDLC, we deliver reliable, scalable solutions that are aligned with your business objectives and relevant in today’s digital landscape. Our team is dedicated to creating software that enhances your business’s efficiency, drives growth, and meets your unique needs. With a focus on precision and excellence, we ensure the final product is a perfect fit for your goals, helping you stay ahead in a competitive market','assets/images/software-installation.png','assets/images/software-installation.png')"
+        >
+          <div class="container-card bg-blue-box">
+            <img
+              src="./assets/images/software.png"
+              alt=""
+              width="80"
+              height="80"
+            />
+            <!-- <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4582)" fill-opacity="0.15" stroke="url(#paint1_radial_1366_4582)" stroke-width="2"></rect>
+              <path d="M90.9405 64.775L88.0155 69.55L85.1155 64.775H80.0655L85.5155 72.85L79.5905 82H84.4905L88.0155 76.175L91.5155 82H96.4405L90.4905 72.85L95.9405 64.775H90.9405Z" fill="#87A1FF"></path>
+              <path d="M44.9833 35.52L27.3433 43.92V52.53L35.1833 49.17V82H44.9833V35.52ZM71.37 35.52L53.73 43.92V52.53L61.57 49.17V82H71.37V35.52Z" fill="#87A1FF"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1366_4582" x1="120.194" y1="119.827" x2="-13.1225" y2="17.1841" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#61A0FF" stop-opacity="0.7"></stop>
+                  <stop offset="0.489583" stop-color="#61A0FF" stop-opacity="0"></stop>
+                  <stop offset="1" stop-color="#61A0FF" stop-opacity="0.7"></stop>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1366_4582" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 60) rotate(96.8574) scale(122.674 149.921)">
+                  <stop stop-color="#87A1FF"></stop>
+                  <stop offset="1" stop-color="#16161D" stop-opacity="0.2"></stop>
+                </radialGradient>
+              </defs>
+            </svg> -->
+            <p class="card-title">software installation</p>
+            <p class="card-description">
+              We follow the SDLC approach, developing high-quality software applications that align with your business goals.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-after-text lg:col-span-2 text-[#ffffff24]">
+          <h1>
+            we provide</br> 360 solutions for you
+          </h1>
+        </div>
       </div>
-    </div> 
+    </section>
+
+    <section class="services-section2 each-section">
+      <div class="deserve pt-20 content-center h-full">
+        <div class="deserve-content h-fit">
+          <div class="deserve-video">
+            <!-- <img src="./assets/images/download.jpg" alt=""> -->
+            <video autoplay muted loop>
+              <source
+                src="assets/videos/aesthetic.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="deserve-head">
+            <h1>do more with <br />us</h1>
+            <p>
+              At NME 360, we provide complete 360° IT solutions to help businesses thrive in the digital age. From custom software development
+               to branding and strategic marketing, our services are designed to enhance your digital presence and future-proof your operations.
+                We specialize in innovative digital transformation, data analytics, IT consulting, and cloud solutions that drive efficiency and success.
+                 Our expert team works closely with you to optimize operations, improve customer engagement, and implement strategies that resonate with your target audience.
+                  Focused on the future, we leverage cutting-edge technology to help businesses stay ahead in today’s competitive market. At NME 360, 
+              we empower businesses to unlock their full potential and succeed in an ever-evolving landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="each-section">
-      <div id="scrollbar-id" class="more-about pt-20  scrollable">
-        <div class="services-section ">
-            <div class="service-head">
-                <h1>services</h1>
-            </div>
-            <div class="services-description">
-              <div class="services-cards">
-                <div class="services-card-content">
-                  <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
-                </div>
-                <div class="services-card-content-para">
-                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
-                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
-                          <div id="third" class="relative scale-y-0 opacity-0">
-                            <div class="service-modal-head">
-                              <h1>
-                                web devoloper
-                              </h1>
-                            </div>
-                            <div class="service-modal-para">
-                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                            </div>                                        
-                          </div>
-                        </div>
-                        <div class="back-btn">
-                          <button onclick="closeAuthModal()"> back</button>
-                           <!-- <button onclick="closeButton()">podaaa</button> -->
-                        </div>
-                    
-                        <div class="service-modal-img">
-                          <img src="assets/images/download (1).jpg" alt="">
-                        </div> 
-                      
-                    </div>
-                    <div class="services-modal-btn">
-                      <h1><button onclick="openAuthModal()">web devoloperrr</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
-                    </div>
-                </div>
+      <div class="scrollable pt-20 services-why-section">
+        <div class="services-why content-center">
+          <div class="lg:flex mx-auto justify-center">
+            <div class="services-why-description">
+              <div class="services-why-image-hide">
+                <img src="assets/images/eye.png " alt="" />
               </div>
-              <div class="services-cards">
-                <div class="services-card-content">
-                  <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
-                </div>
-                <div class="services-card-content-para">
-                  <div class=" ">
-                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
-                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
-                          <div id="third" class="relative scale-y-0 opacity-0">
-                            <div class="service-modal-head">
-                              <h1>
-                                web devoloping
-                              </h1>
-                            </div>
-                            <div class="service-modal-para">
-                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                            </div>                                        
-                          </div>
-                        </div>
-                        <div class="back-btn">
-                          <button onclick="closeAuthModal()">back</button>
-                        </div>
-                    
-                        <div class="service-modal-img">
-                          <img src="assets/images/FOTOS PRA VOCÊS_PICTURES FOR YOU - SOMBRAS_SHADOW (1).png" alt="">
-                        </div> 
-                    </div>
-                    <div class="services-card-content-para">
-                      <h1><button onclick="openAuthModal()">digital marketing</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
-                    </div>
 
-                  </div> 
-                </div>
-              </div>
-            </div>
+              <h1>why we or what makes us unique</h1>
+              <p>
+                At NME 360, we take a unique, 360° approach to business growth by seamlessly blending innovative IT solutions, custom branding, 
+                and strategic marketing into one cohesive service. Unlike others, we don't offer one-size-fits-all solutions. Instead, we tailor each service to meet your 
+                specific business needs, ensuring sustainable growth and long-term success.
 
-            <div class="services-description">
-              <div class="services-cards ">
-                <div class="services-card-content ">
-                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
-                </div>
-                <div class="services-card-content-para">
-                  <div class="">
-                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
-                      
-                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
-                          <div id="third" class="relative scale-y-0 opacity-0">
-                            <div class="service-modal-head">
-                              <h1>
-                                web devoloping
-                              </h1>
-                            </div>
-                            <div class="service-modal-para">
-                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                            </div>                                        
-                          </div>
-                        </div>
-                        <div class="back-btn">
-                          <button onclick="closeAuthModal()">back</button>
-                        </div>
-                    
-                        <div class="service-modal-img">
-                          <img src="assets/images/digital marketing.jpg" alt="">
-                        </div> 
-                      
-                    </div>
-                    <div class="services-card-content-para">
-                      <h1><button onclick="openAuthModal()">branding</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
-                    </div>
-        
-                  </div> 
-                </div>
-              </div>
-              <div class="services-cards">
-                <div class="services-card-content">
-                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="" >
-                </div>
-                <div class="services-card-content-para">
-                  <div class=" ">
-                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
-                      
-                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
-                          <div id="third" class="relative scale-y-0 opacity-0">
-                            <div class="service-modal-head">
-                              <h1>
-                                web devoloping
-                              </h1>
-                            </div>
-                            <div class="service-modal-para">
-                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                            </div>                                        
-                          </div>
-                        </div>
-                        <div class="back-btn">
-                          <button onclick="closeAuthModal()">back</button>
-                        </div>
-                    
-                        <div class="service-modal-img">
-                          <img src="assets/images/Mobile App Development.jpg" alt="">
-                        </div> 
-                      
-                    </div>
-                    <div class="services-card-content-para">
-                      <h1><button onclick="openAuthModal()">app development</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
-                    </div>
-        
-                  </div> 
-                </div>
-              </div>
-            </div>
-        
-            <div class="services-description">
-              <div class="services-cards">
-                <div class="services-card-content">
-                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
-                </div>
-                <div class="services-card-content-para">
-                  <div class="">
-                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
-                      
-                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
-                          <div id="third" class="relative scale-y-0 opacity-0">
-                            <div class="service-modal-head">
-                              <h1>
-                                web devoloping
-                              </h1>
-                            </div>
-                            <div class="service-modal-para">
-                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                            </div>                                        
-                          </div>
-                        </div>
-                        <div class="back-btn">
-                          <button onclick="closeAuthModal()">back</button>
-                        </div>
-                    
-                        <div class="service-modal-img">
-                          <img src="assets/images/download (1).jpg" alt="" >
-                        </div> 
-                      
-                    </div>
-                    <div class="services-card-content-para">
-                      <h1><button onclick="openAuthModal()">software & hardware</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
-                    </div>
-        
-                  </div> 
-                </div>
-              </div>
-              <div class="services-cards">
-                <div class="services-card-content">
-                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="" >
-                </div>
-                <div class="services-card-content-para">
-                  <div class="">
-                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
-                      
-                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
-                          <div id="third" class="relative scale-y-0 opacity-0">
-                            <div class="service-modal-head">
-                              <h1>
-                                web devoloping
-                              </h1>
-                            </div>
-                            <div class="service-modal-para">
-                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                            </div>                                        
-                          </div>
-                        </div>
-                        <div class="back-btn">
-                          <button onclick="closeAuthModal()">back</button>
-                        </div>
-                        <div class="service-modal-img">
-                          <img src="assets/images/pointer-pin-location-earth-global-world-with-cardboard-boxes-transportation-logistics-concept-pink-background-icon-symbol-3d-rendering.jpg" alt="">
-                        </div> 
-                      
-                    </div>
-                    <div class="services-card-content-para">
-                      <h1><button onclick="openAuthModal()">seo</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
-                    </div>
-        
-                  </div> 
-                </div>
-              </div>
-            </div>
-        
-            <div class="services-description">
-              <div class="services-cards">
-                <div class="services-card-content">
-                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
-                </div>
-                <div class="services-card-content-para">
-                  <div class="">
-                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
-                      
-                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
-                          <div id="third" class="relative scale-y-0 opacity-0">
-                            <div class="service-modal-head">
-                              <h1>
-                                web devoloping
-                              </h1>
-                            </div>
-                            <div class="service-modal-para">
-                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                            </div>                                        
-                          </div>
-                        </div>
-                        <div class="back-btn">
-                          <button onclick="closeAuthModal()">back</button>
-                        </div>
-                    
-                        <div class="service-modal-img">
-                          <img src="assets/images/branding.jpg" alt=""></button>
-                        </div> 
-                      
-                    </div>
-                    <div class="services-card-content-para">
-                      <h1><button onclick="openAuthModal()">ui/ux design</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
-                    </div>
-        
-                  </div> 
-                </div>
-              </div>
-              <div class="services-cards">
-                <div class="services-card-content">
-                    <img src="assets/images/Diagrama de gráfico de finanças do gráfico de negócios de dinheiro azul no fundo da moeda 3d da economia com conceito de dados financeiros de crescimento ou barra de lucro do mercado de investimento e relatório de m.jpg" alt="">
-                </div>
-                <div class="services-card-content-para">
-                  <div class="">
-                    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex  py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
-                      
-                        <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl  scale-y-0 "> 
-                          <div id="third" class="relative scale-y-0 opacity-0">
-                            <div class="service-modal-head">
-                              <h1>
-                                web devoloping
-                              </h1>
-                            </div>
-                            <div class="service-modal-para">
-                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                            </div>                                        
-                          </div>
-                        </div>
-                        <div class="back-btn">
-                          <button onclick="closeAuthModal()">back</button>
-                        </div>
-                    
-                        <div class="service-modal-img">
-                          <img src="assets/images/digital marketing.jpg" alt="">
-                        </div> 
-                      
-                    </div>
-                    <div class="services-card-content-para">
-                      <h1><button onclick="openAuthModal()">web devoloping</button> <i class="bi bi-arrow-up-right-circle-fill"></i></h1>
-                    </div>
-        
-                  </div> 
-                </div>
-              </div>
-            </div>
+                What sets us apart is our ability to stay ahead of digital trends, leveraging cutting-edge technology and creative strategies to empower your business
+                in an ever-evolving market. Our expert team works closely with you to craft personalized solutions that optimize your operations, enhance your brand presence, 
+                and improve customer engagement.
 
-         
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="each-section">
-    </section> -->
-
-
-
-    <section class="each-section pt-40 scrollable">
-      <div class="services-why lg:flex ">
-        <div class="services-why-description">
-          <h1>why we or what makes us unique</h1>
-          <p>
-            A well-designed website generally will receive many visitors, and SEO helps your website to get more users. Our development team always keeps all standards of SEO while 
-            developing a website. It helps your website to list soon on search engines under your targeting keywords. We usually perform a SEO audit check up after the development 
-            process which help us to make your website a completely SEO friendly one. Our development team ensure that your website is easily render on various resolutions, screen 
-            sizes, and browsers; and with the increasing popularity of mobile devices, websites should function properly on the plethora of these types of devices. We also provide 
-            custom web development as per your requirement. Our team has experience in extensively on numerous high quality products and has a proven record of successful projects.
-             Our highly skilled team should working on the project, dedicating all the necessary energy to meet all quality requirements, and provide trainings to the staff regarding 
-             cutting-edge technologies.
-          </p>
-        </div>
-        <div class="services-why-image">
-          <img src="assets/images/FOTOS PRA VOCÊS_PICTURES FOR YOU - SOMBRAS_SHADOW.jpg" alt="">
-        </div>
-      </div>
-
-
-
-
-
-      <div class="footer">
-        <div class="container-fluid">
-          <div class="footer-sub grid grid-rows-1 grid-flow-col ">
-            <div class="footer-address">
-              <p>Hilite Business Park<br>
-                Near Hilite Mall,Poovangal,Kozhikode<br>
-                Kochi, Thiruvananthapuram, Pondichery<br>
-                Coimbatore,Chennai, Bengaluru<br>
-                Dubai, Qatar, Oman<br>
+                With NME 360, you’re not just adapting to change – you're leading it. We focus on delivering future-proof
+                solutions that position your business to thrive today and in the future.
               </p>
             </div>
-
-            <div class="footer-sociallinks">
-              <p class="facebook"><a href="">facebook <i class="fa fa-arrow-right arrow1" aria-hidden="true"></i></a></p>
-                <p class="instagram"><a href="">instagram <i class="fa fa-arrow-right arrow2" aria-hidden="true"></i></a></p>
-                <p class="linkedin"><a href="">linkedin <i class="fa fa-arrow-right arrow3" aria-hidden="true"></i></a> </i></p>
-              </p>
-              <div class="footer-email">
-                <h4>enquiries</h4>
-                <p>nmesmartech@gmail.com</p>
-              </div>
-            </div>
-
-            <div class="footer-newsletter">
-              <div class="newsletter">
-                <h1>subscribe to  <br>
-                our news letter</h1>
-              </div>
-              <div class="newsletter-input">
-                <input type="text" placeholder="your email">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="copyright grid grid-rows-1 grid-flow-col">
-            <div class="copy">
-              <p><i class="fa fa-copyright" aria-hidden="true"></i>  2024 nme-360</p>
-            </div>
-            <div class="powerdby">
-              <p>powerd by nme-360 team</p>
+            <div class="services-why-image">
+              <img src="assets/images/eye.png" alt="" />
             </div>
           </div>
         </div>
+
+        <!-- footer -->
+
+        <div class="footer mt-[5rem] overflow-hidden" id="footer">
+          <div class="container-fluid">
+            <div class="footer-sub grid grid-col-3 md:grid-flow-col sm:grid-cols-2 md:grid-cols-2">
+              <!-- <div class="footer-address">
+                <p>
+                  Hilite Business Park<br />
+                  Near Hilite Mall,Poovangal,Kozhikode<br />
+                  Kochi, Thiruvananthapuram, Pondichery<br />
+                  Coimbatore,Chennai, Bengaluru<br />
+                  Dubai, Qatar, Oman<br />
+                </p>
+              </div> -->
+
+              <div class="footer-address">
+                <p class="text-[27px]">
+                  Carnival Infopark Phase I <br> Infopark Campus<br>  Kakkanad, Kochi<br> Kerala 682030
+                </p>
+                <h3 class="mt-[3rem] sm:text-3xl font-bold text-[17px]">
+                  we are also in
+                </h3>
+                <p class="mt-[1rem] text-[20px]">Thiruvananthapuram, Pondichery<br/>
+                  Coimbatore,Chennai, Bengaluru<br/>
+                  Dubai, Qatar, Oman</p>
+              </div>
+
+              <div class="footer-sociallinks">
+                <p class="facebook">
+                  <a href="https://www.facebook.com/profile.php?id=61567136343029&mibextid=ZbWKwL"
+                    >facebook
+                    <i class="fa fa-arrow-right arrow1" aria-hidden="true"></i
+                  ></a>
+                </p>
+                <p class="instagram">
+                  <a href="https://www.instagram.com/n_me360?igsh=MWRtdDVsZzB2aDFoeA=="
+                    >instagram
+                    <i class="fa fa-arrow-right arrow2" aria-hidden="true"></i
+                  ></a>
+                </p>
+                <p class="linkedin">
+                  <a href="https://www.linkedin.com/in/n-me-app"
+                    >linkedin
+                    <i class="fa fa-arrow-right arrow3" aria-hidden="true"></i
+                  ></a>
+                </p>
+                <div class="footer-email">
+                  <h4>enquiries</h4>
+                  <p>nme360info@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="footer-newsletter">
+                <div class="newsletter">
+                  <h1>
+                    subscribe to <br />
+                    our news letter
+                  </h1>
+                </div>
+                <div class="newsletter-input">
+                  <input type="text" placeholder="your email" />
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="copyright grid grid-rows-1 grid-flow-col">
+              <div class="copy">
+                <p>
+                  <i class="fa fa-copyright" aria-hidden="true"></i> 2024
+                  nme-360.  powerd by nme-360 team
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="scroll-next-page bg-black w-[100%] h-[200px] inset-y-0">
+
+          </div> -->
+        </div>
       </div>
-
     </section>
-  
-    <script src="./assets/js/app.js"></script>`
-
 
     <script src="./assets/js/service.js"></script>
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
 
-<script src="https://cdn.tailwindcss.com"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="jquery-3.7.1.min.js"></script>
-
-<script src="./three.js"></script>
+    <script src="./three.js"></script>
+  </body>
 </html>
 
+<!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    class="squiggle"
+     width="614.29px" 
+     height="1088.66px" 
+     viewBox="0 0 614.29 1088.66" 
+     style="enable-background:new 0 0 614.29 1088.66;" xml:space="preserve"> 
+     <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:40;stroke-miterlimit:10;} </style> 
+     <defs> </defs> 
+     <path class="st0" d="M19.99,0.45c1.61,71.03,24.43,140.91,63.46,199.85c33.7,50.89,81.42,90.08,132.19,122.56 c52.67,33.7,109.51,68.73,167.79,91.25c36.74,14.2,76.83,21.96,115.61,15.31c22.05-3.78,43.56-12.36,60.86-26.69 c17.3-14.33,30.13-34.66,33.53-57.01c6.38-42.03-22.87-84.27-61.71-100.59c-38.84-16.32-84.19-10.12-122.3,7.85 c-41.53,19.58-76.49,52.92-98.63,93.45c-25.56,46.8-25.12,103.26-29.31,155.17c-6.33,78.45,6.12,159.25,2.85,238.67 c-1.55,37.66-15.43,74.39-37.64,104.52c-5.15,6.98-10.75,13.62-16.77,19.84c-11.74,12.13-25.26,22.84-40.8,29.24 s-33.31,8.23-49.23,2.85c-18.68-6.32-33.6-22.65-38.84-41.85c-5.24-19.2-0.83-40.72,11.12-56.55 c10.61-14.06,26.35-23.35,42.73-29.57c18.32-6.96,37.84-10.43,57.38-10.97c18.95-0.52,37.85,1.07,54.72,10.58 c1.49,0.84,2.95,1.73,4.37,2.67c2.62,1.73,5.12,3.63,7.5,5.69c15.85,13.76,26.14,33.06,33.85,52.39 c11.84,29.72,18.33,61.55,22.84,93.17c4.31,30.18,6.63,60.65,7.69,91.11c0.64,18.4,0.85,36.84,0.38,55.25 c-0.04,1.54-0.08,3.07-0.14,4.61"/> </svg> -->
 
+<!-- <script src="./assets/js/app.js"></script> -->

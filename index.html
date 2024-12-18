@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/threejs-components@0.0.5/build/backgrounds/spheres1.cdn.min.js"></script> -->
+
+        <!-- icon cdn -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link href="./main.scss" rel="stylesheet" /> -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/header.css" rel="stylesheet" />
+    <!-- <link href="./sample.css" rel="stylesheet" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="bg-black">
+    <!-- navbar -->
+    <div
+      id="nav-bar"
+      class="fixed top-0 w-full z-20 flex justify-between px-8 md:px-20"
+    >
+      <div>
+        <img id="logo"
+          class="w-20 md:w-28 transition-all"
+          src="./assets/images/N-ME 360 LOGO WHITE PNG.png"
+        />
+      </div>
+
+      <div onclick="handleNavbar()" class="content-center cursor-pointer">
+        <div id="colapse1" class="h-[2px] rounded w-8 bg-white mb-2"></div>
+        <div id="colapse2" class="h-[2px] rounded w-8 bg-white mb-2"></div>
+        <div id="colapse3" class="h-[2px] rounded w-10 bg-white mb-2"></div>
+      </div>
+    </div>
+
+    <div
+      id="nav-expand"
+      class="w-full bg-black fixed opacity-0 z-10 navExpand h-[100vh] mt-[-100vh]"
+    >
+      <div id="nav-main-tab" class="h-0 w-full flex navExpand mt-40 px-20 h-fit justify-center">
+        <div class="w-3/4 text-white mb">
+          <a href="index.html">
+            <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+              <h1 class="font-bold">Home</h1>
+            </div>
+          </a>
+          <a href="about.html">
+            <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+              <h1 class="font-bold">About</h1>
+            </div>
+          </a>
+          <a href="services.html">
+            <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+              <h1 class="font-bold">Services</h1>
+            </div>
+          </a>
+          <a href="contact.html">
+            <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
+              <h1 class="font-bold">Contact us</h1>
+            </div>
+          </a>
+        </div>
+
+        <!-- <div class="w-1/2 text-white"></div> -->
+      </div>
+    </div>
+
+    <!-- navbar closing -->
+
+    <!-- homepage -->
+
+    <div class="each-section w-full bg-[black] homepage">
+      <div class="content-center text-center w-full h-full bghead">
+        <video
+          class="absolute h-[100vh] object-center object-cover w-[100%]"
+          autoplay
+          muted
+          loop
+          id="myVideo"
+        >
+          <source src="./assets/videos/homepage.mp4" type="video/mp4" />
+        </video>
+
+        <div class="positivity">
+          <span
+            class="poppins-bold positivity__alone md:text-[3rem] text-[1rem]"
+            >Choose your</span
+          >
+          <div class="poppins-extrabold positivity__words">
+            <span class="change text-[2rem] md:text-[8rem]"
+              ><span class="text-[#8dddf1]">d</span>ream</span
+            >
+            <span class="change text-[2rem] md:text-[8rem]"
+              ><span class="text-[#c3e47b]">s</span>uccess</span
+            >
+            <span class="change text-[2rem] md:text-[8rem]"
+              ><span class="text-[#ebe294]">p</span>assion</span
+            >
+            <span class="change text-[2rem] md:text-[8rem]"
+              ><span class="text-[#eeac51]">f</span>uture</span
+            >
+            <span class="change text-[2rem] md:text-[8rem]"
+              ><span class="text-[#e7606f]">p</span>urpose</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- homepege closing -->
+
+    <!-- about page  -->
+    <section class="each-section">
+      <div class="content-center h-full">
+        <div class="about h-fit">
+          <section class="flex mb-20 md:mb-48">
+            <div class="w-full mx-auto">
+              <div class="main">
+                <h2
+                  class=" poppins-extrabold first letter text-[40px] md:text-[70px] lg:text-[150px]"
+                >
+                  WHO WE ARE
+                </h2>
+                <h2
+                  class="poppins-extrabold second letter text-[40px] md:text-[70px] lg:text-[150px]"
+                >
+                  WHO WE ARE
+                </h2>
+              </div>
+            </div>
+          </section>
+
+          <div
+            id="title-1"
+            class="ab-1 text-[13px] md:text-[20px] tracking-[8px] md:tracking-[15px]"
+          >
+            <p class="fontfamily-light">
+              WE PROVIDE TAILORED TECH SOLUTIONS,<br />
+              STREAMLINING PROCESSES, ENHANCING PRODUCTIVITY,<br />
+              AND PROMOTING YOUR BRAND FOR BUSINESS GROWTH AND<br />
+              SUCCESS.
+            </p>
+          </div>
+
+          <div class="btn-about mt-20">
+            <div class="w-fit relative explore-button mx-auto">
+              <a href="about.html">
+                <div class="content-center">
+                  <div
+                    class="fontfamily-light text-white explore absolute flex"
+                  >
+                    <span class="text-[#acd562] text-4xl"> X</span>
+                    <h1 class="content-center">plore More</h1>
+                  </div>
+                  <img
+                    class="h-24 explore-img"
+                    src="./assets/images/icon button2-02.png"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial section -->
+
+    <section class="each-section">
+      <div class="our-clients md:flex">
+        <div class="testimonial-scroll h-full w-full lg:w-[60%]">
+          <div class="w-full h-1/2 content-end lg:content-center">
+            <h1
+              class="poppins-bold text-white lg:mb-0 mb-12 text-3xl md:text-5xl lg:text-7xl text-center md:text-start md:ml-28"
+            >
+              Our Trusted<br />
+              Collaborators
+            </h1>
+            <div class="h-fit w-full lg:hidden block px-10">
+              <h1
+                class="testimonial-quote-2 font-light text-xl font-light text-[#ffffff]"
+              >
+                <span class="sm:text-[#ffffff] text-[#ffffff]"
+                  >You're not just clients, you're a vital part of our
+                  team</span
+                >-where success is our mission, and we make sure the journey is
+                both inspiring and rewarding.
+              </h1>
+            </div>
+          </div>
+          <div class="w-full h-[47%] testimonial-autoslider">
+            <div class="slider">
+              <div class="slide-track">
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/club-sulaimani-logo.png"
+                    class="h-[85%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/daymart-logo.png"
+                    class="h-[65%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/fresh-bucket-logo.png"
+                    class="h-[85%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/jk-logo.svg"
+                    class="h-[85%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/srs-logo.png"
+                    class="h-[85%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/theorem-logo.png"
+                    class="h-[30%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/club-sulaimani-logo.png"
+                    class="h-[85%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/daymart-logo.png"
+                    class="h-[65%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/fresh-bucket-logo.png"
+                    class="h-[85%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/jk-logo.svg"
+                    class="h-[85%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/srs-logo.png"
+                    class="h-[85%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/theorem-logo.png"
+                    class="h-[30%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/club-sulaimani-logo.png"
+                    class="h-[85%]"
+                    alt=""
+                  />
+                </div>
+                <div class="slide content-center">
+                  <img
+                    src="./assets/images/client-logos/daymart-logo.png"
+                    class="h-[85%]"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-para h-full w-full lg:w-[40%] content-end">
+          <div class="h-full content-center">
+            <!-- <div><img src="./assets/images/double-quotes.png" alt="" class="h-fit bg-[blue]"></div> -->
+            <div class="h-fit w-full lg:block hidden">
+              <h1
+                class="testimonial-quote font-light text-4xl mr-28 font-light text-[#b7b7b7]"
+              >
+                <span class="text-[#ffffff]"
+                  >You're not just clients, you're a vital part of our
+                  team</span
+                >-<span class="text-[]">where success is our mission, and we make sure the journey is
+                both inspiring and rewarding.</span>
+              </h1>
+            </div>
+            <!-- <div><img src="./assets/images/double-quotes.png " class="h-fit bg-[blue]" alt=""></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+     <section class="each-section h-full">
+      <div id="whyus-all-section" class="md:flex service-box">
+        <div class="card-us w-full md:w-1/2 sidebar">
+          <div class="service-1 content-wrapper main-scrolling-div">
+            <div class="title-1 gap-4 each-section content-center">
+              <div class="heading-1">
+  
+                <video
+                  autoplay
+                  muted
+                  loop
+                  class="h-[60vh] absolute -z-10 block mt-[72px]"
+                  src="./assets/videos/whyus page.mp4"
+                ></video>
+                <h1
+                  class="poppins-extrabold text-8xl md:text-[9rem] leading-[1] mb-16 w-min heading-text mt-3"
+                >
+                  WHY US
+                </h1>
+              </div>
+            </div>
+
+            <div class="title-1 gap-4 each-section content-center">
+              <div class="heading-1 fontfamily-extra-bold">
+
+                <h1 class="text-7xl mb-16 w-min heading-text text-[#8dddf1]">
+                  E
+                </h1>
+                <h1 class="text-5xl mb-16 w-min heading-text mt-3">
+                  xpertise and Innovation
+                </h1>
+              </div>
+              <p class="para-1 text-xl md:text-[24px] fontfamily-light">
+                Our experienced team of professionals brings extensive 
+                knowledge and experience in IT solutions, ensuring we 
+                stay ahead of industry trends and deliver innovative 
+                services designed to your needs.
+              </p>
+            </div>
+
+            <div class="title-1 gap-3 each-section content-center">
+              <div class="heading-1 fontfamily-extra-bold">
+
+                <h1 class="text-7xl mb-16 w-min heading-text text-[#c3e47b]">
+                  C
+                </h1>
+                <h1 class="text-5xl mb-16 w-min heading-text mt-3">
+                  omprehensive Solutions
+                </h1>
+              </div>
+              <p class="para-1 text-xl md:text-[24px] fontfamily-light">
+                From designing and branding to web designing and 
+                digital marketing, we provide a comprehensive range of 
+                services that cover all aspects of your digital presence.
+              </p>
+            </div>
+
+
+            <div class="title-1 gap-3 hidden lg:block  each-section content-center">
+            
+
+              <!-- web -->
+              <div class="heading-1 fontfamily-extra-bold ">
+
+                <h1 class="text-7xl w-min heading-text text-[#e7606f]">
+                  P
+                </h1>
+                <div class="mb-16">
+                <h1 class="text-5xl  w-min heading-text mt-3">
+                  roven
+                </h1>
+                <h1 class="text-5xl  w-fit heading-text mt-3">
+              Track Record
+                </h1>
+              </div>
+              </div>
+
+              <p class="para-1 text-xl md:text-[24px] fontfamily-light">
+                With over 1,500+ active clients and more than 1,800+ 
+                successful projects, our reputation speaks for itself. We 
+                have a history of delivering results that drive growth and 
+                success for businesses of all sizes.
+              </p>
+            </div>
+
+
+          
+            <div class="title-1 gap-3 block lg:hidden each-section content-center">
+               <!-- mobile --> 
+          <div class="heading-1 fontfamily-extra-bold">
+
+            <h1 class="text-7xl mb-16 w-min heading-text text-[#e7606f]">
+              P
+            </h1>
+            <h1 class="text-5xl mb-16 w-min heading-text mt-3">
+              roven Track Record
+            </h1>
+          </div>
+
+              <p class="para-1 text-xl md:text-[24px] fontfamily-light">
+                With over 1,500+ active clients and more than 1,800+ 
+                successful projects, our reputation speaks for itself. We 
+                have a history of delivering results that drive growth and 
+                success for businesses of all sizes.
+              </p>
+            </div>
+
+            <div class="title-1 gap-3 each-section content-center">
+              <div class="heading-1 fontfamily-extra-bold">
+
+                <h1 class="text-7xl mb-16 w-min heading-text text-[#ebe294]">
+                  C
+                </h1>
+                <h1 class="text-5xl mb-16 w-min heading-text mt-3">
+                  ommitment to Quality
+                </h1>
+              </div>
+              <p class="para-1 text-xl md:text-[24px] fontfamily-light">
+                We believe in delivering high-quality solutions that are 
+                not only effective but also reliable. Our rigorous quality 
+                assurance processes
+                needs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="md:block hidden ball-anim w-[50%] transition-all"
+          id="ball-falling-animation"
+        >
+          <div class="ball-main w-[100%]">
+            <div class="fall">
+              <div class="walls">
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+              </div>
+              <div class="ballArm">
+                <div class="ball"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- flipping section - why us -->
+
+    <!-- <section class="each-section h-full">
+      <div id="whyus-all-section" class="md:flex service-box">
+        <div  class="card-us w-full md:w-1/2 sidebar">
+          <div class="service-1 content-wrapper main-scrolling-div">
+            
+            
+            
+            <div class="title-1 gap-4 each-section content-center" id="why-us-each-section-content">
+              <div class="heading-1">
+                <video
+                  autoplay  
+                  muted
+                  loop
+                  class="h-[60vh] absolute -z-10   block mt-[72px] "
+                  src="./assets/videos/whyus page.mp4"
+                ></video>
+                <h1
+                  class="fontfamily-heavy text-8xl md:text-[9rem] leading-[1] mb-16 w-min heading-text mt-3"
+                >
+                  WHY US
+                </h1>
+              </div>
+            </div>
+         </div>
+        </div>
+
+        <div
+          class="md:block hidden  ball-anim w-[50%] transition-all"
+          id="ball-falling-animation"
+        >
+          <div class="ball-main w-[100%]">
+            <div class="fall">
+              <div class="walls">
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+                <div class="wall">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="ceil"></div>
+                </div>
+              </div>
+              <div class="ballArm">
+                <div class="ball"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <!-- video section -->
+
+    <!-- <section class="each-section v-sec-outer">
+      <div>
+        <video autoplay muted class="v-sec target">
+          <source
+            src="./assets/videos/WhatsApp Video 2024-12-10 at 01.16.09_efdf7018.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </section> -->
+
+    <section class="each-section">
+      <div class="h-[100vh] scrollable w-full relative" id="globe">
+        <h1
+          class="poppins-extrabold text-white text-5xl md:text-7xl text-center mt-[105px]"
+        >
+          Our Projects
+        </h1>
+        <div class="our-projects md:mr-[100px] md:ml-[100px] md:flex">
+          <div class="first-project" style="border-radius: 2px 82px / 93px">
+            <div class="w-[35%] mb-12 mt-8 mx-auto">
+              <img
+                src="./assets/images/logo-nme.png"
+                class="nme-img mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="nme-quotes mb-12">
+              <p class="fontfamily-light text-xl text-[white]">
+                Your gateway to effortless business promotion worldwide
+              </p>
+            </div>
+            <div class="project-btn h-[50px] w-[30%] mx-auto bg-[#051d39]">
+              <a href="https://nmeapp.in/"
+                ><button class="prjct-btn">Read more</button></a
+              >
+            </div>
+          </div>
+
+          <div class="rotating-animation md:min-h-[100vh] min-h-0 -z-20">
+            <div class="projects hidden" id="rotating-animation">
+              <div class="scene">
+                <div class="rings">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="second-project" style="border-radius: 2px 82px / 93px">
+            <div class="w-[50%] mb-12 mt-12 mx-auto">
+              <img
+                src="./assets/images/buysel.png"
+                class="buysel-img mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="nme-quotes mb-12">
+              <p class="fontfamily-light text-xl text-[white]">
+                The ultimate destination for efficient<br />
+                real-estate management
+              </p>
+            </div>
+            <div class="project-btn h-[50px] w-[30%] mx-auto bg-[#00802e5e]">
+              <button class="prjct-btn" id="project-button">Read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- future updation section -->
+    <section class="each-section">
+      <div class="content-center h-full scrollable">
+        <div class="future-sec h-fit">
+          <div class="poppins-thin updates-cards h-full content-center">
+            <div class="updates h-fit mt-[85px]">
+              <h1
+                class="poppins-extrabold text-[white] text-4xl md:text-7xl text-center hidden md:block"
+              >
+                Our Future Projects
+              </h1>
+              <h1
+                class="poppins-extrabold text-[white] text-4xl md:text-7xl text-center md:hidden"
+              >
+                Our Future<br />
+                Projects
+              </h1>
+            </div>
+            <div
+              class="centered md:justify-self-auto justify-self-center gap-4 md:flex md:pt-20 mb-[284px] h-fit"
+            >
+              <div
+                class="card mt-[50px] md:mt-0 border-right-behind border-bottom-behind"
+              >
+                <div class="shadow"></div>
+                <div class="image background">
+                  <img
+                    class="rounded-3xl"
+                    src="./assets/images/designs_08.1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="image cutout">
+                  <img src="./assets/images/ticket new.png" alt="" />
+                </div>
+                <div class="content">
+                  <h2 class="text-white  text-4xl text-center montserrat-alternates-semibold">
+                    Ticket booking
+                  </h2>
+                </div>
+              </div>
+              <div class="card mt-[150px] md:mt-0 border-left-behind">
+                <div class="shadow"></div>
+                <div class="image background">
+                  <img
+                    class="rounded-3xl"
+                    src="./assets/images/designs_08.1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="image cutout">
+                  <img src="./assets/images/eiffel_tower-removebg.png" alt="" />
+                </div>
+                <div class="content">
+                  <h2 class="text-white  text-4xl text-center montserrat-alternates-semibold">
+                    Tourism
+                  </h2>
+                </div>
+              </div>
+              <div class="card mt-[150px] md:mt-0 border-left-behind">
+                <div class="shadow"></div>
+                <div class="image background">
+                  <img
+                    class="rounded-3xl"
+                    src="./assets/images/designs_08.1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="image cutout">
+                  <img src="./assets/images/car new.png" alt="" class="flex" />
+                </div>
+                <div class="content">
+                  <h2 class="text-white  text-4xl text-center montserrat-alternates-semibold">
+                    Cab booking
+                  </h2>
+                  <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="footer w-[100%] overflow-hidden" id="footer">
+          <div class="container-fluid">
+            <div
+              class="footer-sub grid grid-col-3 md:grid-flow-col sm:grid-cols-2 md:grid-cols-2"
+            >
+              <div class="footer-address">
+                <p class="text-[27px]">
+                  Carnival Infopark Phase I <br> Infopark Campus<br>  Kakkanad, Kochi<br> Kerala 682030
+                </p>
+                <h3 class="mt-[3rem] sm:text-3xl font-bold text-[17px]">
+                  we are also in
+                </h3>
+                <p class="mt-[1rem] text-[20px]">Thiruvananthapuram, Pondichery<br/>
+                  Coimbatore,Chennai, Bengaluru<br/>
+                  Dubai, Qatar, Oman</p>
+              </div>
+
+              <div class="footer-sociallinks">
+                <p class="facebook">
+                  <a href="https://www.facebook.com/profile.php?id=61567136343029&mibextid=ZbWKwL"
+                    >facebook
+                    <i class="fa fa-arrow-right arrow1" aria-hidden="true"></i
+                  ></a>
+                </p>
+                <p class="instagram">
+                  <a href="https://www.instagram.com/n_me360?igsh=MWRtdDVsZzB2aDFoeA=="
+                    >instagram
+                    <i class="fa fa-arrow-right arrow2" aria-hidden="true"></i
+                  ></a>
+                </p>
+                <p class="linkedin">
+                  <a href="https://www.linkedin.com/in/n-me-app"
+                    >linkedin
+                    <i class="fa fa-arrow-right arrow3" aria-hidden="true"></i
+                  ></a>
+                </p>
+                <div class="footer-email">
+                  <h4>enquiries</h4>
+                  <p>nme360info@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="footer-newsletter">
+                <div class="newsletter">
+                  <h1>
+                    subscribe to <br />
+                    our news letter
+                  </h1>
+                </div>
+                <div class="newsletter-input">
+                  <input type="text" placeholder="your email" />
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="copyright grid grid-rows-1 grid-flow-col">
+              <div class="copy">
+                <p>
+                  <i class="fa fa-copyright" aria-hidden="true"></i> 2024
+                  nme-360.  powerd by nme-360 team
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="scroll-next-page bg-black w-[100%] h-[200px] inset-y-0">
+
+          </div> -->
+        </div>
+
+
+
+
+
+        
+      </div>
+    </section>
+
+    <!-- <section class="each-section"></section> -->
+    <!-- future updation closing -->
+
+    <!-- modal-section -->
+
+    <!-- modal-closing -->
+  </body>
+
+  <script src="jquery-3.7.1.min.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/app1.js"></script>
+  <script src="./three.js"></script>
+</html>
